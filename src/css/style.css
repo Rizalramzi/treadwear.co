@@ -1,0 +1,25 @@
+#hero{
+    background-image: url("../assets/images/bg-hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#bg-man{
+    background-image: url("../assets/images/bg-man-2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#blog{
+    background-image: url("../assets/images/bg-blog.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+  
