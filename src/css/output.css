@@ -634,6 +634,14 @@ video {
   margin-top: 2rem;
 }
 
+.mt-\[3\.333vw\] {
+  margin-top: 3.333vw;
+}
+
+.mt-\[7\.813vw\] {
+  margin-top: 7.813vw;
+}
+
 .block {
   display: block;
 }
@@ -1129,6 +1137,10 @@ video {
 
 .pt-\[py-\[7\.813vw\]\] {
   padding-top: py-[7.813vw];
+}
+
+.pt-\[3\.333vw\] {
+  padding-top: 3.333vw;
 }
 
 .text-center {
