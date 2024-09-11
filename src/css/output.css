@@ -598,6 +598,10 @@ video {
   top: 3vw;
 }
 
+.bottom-\[-3\.333vw\] {
+  bottom: -3.333vw;
+}
+
 .z-\[-1\] {
   z-index: -1;
 }
@@ -704,6 +708,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[32\.292vw\] {
+  height: 32.292vw;
 }
 
 .w-2\/5 {
