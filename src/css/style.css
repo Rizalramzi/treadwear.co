@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 50vw;
 }
 
 #bg-man{
@@ -11,7 +11,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 43.229vw;
 }
 
 #blog{
@@ -27,5 +27,35 @@
     background-position: top;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+/* Ensure the scroll container has snap behavior */
+#blog .overflow-scroll {
+    scroll-snap-type: x mandatory; /* Snap horizontally */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  #blog .overflow-scroll .flex {
+    scroll-snap-align: start; /* Snap to the start of each item */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Animation for the items */
+  }
+  
+  #blog .overflow-scroll .flex.exiting {
+    transform: translateY(-20px); /* Move the item up */
+    opacity: 0; /* Fade it out */
+  }
+  
+  /* Hide scrollbar */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }  
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 
   
