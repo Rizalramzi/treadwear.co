@@ -1114,6 +1114,18 @@ video {
   margin-bottom: calc(2.813vw * var(--tw-space-y-reverse));
 }
 
+.space-y-\[0\.99vw\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.99vw * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.99vw * var(--tw-space-y-reverse));
+}
+
+.space-y-\[py-\[0\.99vw\]\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(py-[0.99vw] * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(py-[0.99vw] * var(--tw-space-y-reverse));
+}
+
 .overflow-scroll {
   overflow: scroll;
 }
@@ -1286,6 +1298,11 @@ video {
 .py-\[9\.375vw\] {
   padding-top: 9.375vw;
   padding-bottom: 9.375vw;
+}
+
+.py-\[0\.99vw\] {
+  padding-top: 0.99vw;
+  padding-bottom: 0.99vw;
 }
 
 .pb-0 {
