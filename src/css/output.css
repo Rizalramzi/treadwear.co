@@ -634,8 +634,8 @@ video {
   margin-left: -6.25vw;
 }
 
-.ml-\[2\.093vw\] {
-  margin-left: 2.093vw;
+.ml-\[1\.395vw\] {
+  margin-left: 1.395vw;
 }
 
 .ml-\[76\.512vw\] {
@@ -650,12 +650,12 @@ video {
   margin-top: 2rem;
 }
 
-.mt-\[-10\.233vw\] {
-  margin-top: -10.233vw;
-}
-
 .mt-\[-2\.604vw\] {
   margin-top: -2.604vw;
+}
+
+.mt-\[12\.279vw\] {
+  margin-top: 12.279vw;
 }
 
 .mt-\[29\.302vw\] {
@@ -708,18 +708,6 @@ video {
 
 .mt-\[9\.767vw\] {
   margin-top: 9.767vw;
-}
-
-.ml-\[1\.395vw\] {
-  margin-left: 1.395vw;
-}
-
-.mt-\[16\.279vw\] {
-  margin-top: 16.279vw;
-}
-
-.mt-\[12\.279vw\] {
-  margin-top: 12.279vw;
 }
 
 .block {
@@ -822,12 +810,16 @@ video {
   height: 96.047vw;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
 
-.h-auto {
-  height: auto;
+.h-\[\] {
+  height: ;
 }
 
 .w-3\/4 {
@@ -862,6 +854,10 @@ video {
   width: 39.302vw;
 }
 
+.w-\[4\.977vw\] {
+  width: 4.977vw;
+}
+
 .w-\[40\.233vw\] {
   width: 40.233vw;
 }
@@ -876,10 +872,6 @@ video {
 
 .w-\[45\.116vw\] {
   width: 45.116vw;
-}
-
-.w-\[6\.977vw\] {
-  width: 6.977vw;
 }
 
 .w-\[65\.581vw\] {
@@ -1069,6 +1061,10 @@ video {
   overflow-x: hidden;
 }
 
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1183,6 +1179,10 @@ video {
   padding-left: 11.667vw;
 }
 
+.pl-\[3\.721vw\] {
+  padding-left: 3.721vw;
+}
+
 .pl-\[5\.349vw\] {
   padding-left: 5.349vw;
 }
@@ -1193,6 +1193,10 @@ video {
 
 .pr-\[1\.302vw\] {
   padding-right: 1.302vw;
+}
+
+.pr-\[3\.721vw\] {
+  padding-right: 3.721vw;
 }
 
 .ps-0 {
@@ -1221,22 +1225,6 @@ video {
 
 .pt-\[7\.813vw\] {
   padding-top: 7.813vw;
-}
-
-.pl-\[2\.558vw\] {
-  padding-left: 2.558vw;
-}
-
-.pr-\[2\.558vw\] {
-  padding-right: 2.558vw;
-}
-
-.pl-\[3\.721vw\] {
-  padding-left: 3.721vw;
-}
-
-.pr-\[3\.721vw\] {
-  padding-right: 3.721vw;
 }
 
 .text-center {
@@ -1288,6 +1276,10 @@ video {
   font-size: 2.791vw;
 }
 
+.text-\[3\.186vw\] {
+  font-size: 3.186vw;
+}
+
 .text-\[3\.256vw\] {
   font-size: 3.256vw;
 }
@@ -1302,6 +1294,10 @@ video {
 
 .text-\[3\.5vw\] {
   font-size: 3.5vw;
+}
+
+.text-\[3\.686vw\] {
+  font-size: 3.686vw;
 }
 
 .text-\[3\.721vw\] {
@@ -1357,10 +1353,6 @@ video {
   font-weight: 600;
 }
 
-.leading-\[11\.628vw\] {
-  line-height: 11.628vw;
-}
-
 .leading-\[2\.604vw\] {
   line-height: 2.604vw;
 }
@@ -1375,6 +1367,10 @@ video {
 
 .leading-\[8\.628vw\] {
   line-height: 8.628vw;
+}
+
+.leading-\[9\.628vw\] {
+  line-height: 9.628vw;
 }
 
 .leading-none {
