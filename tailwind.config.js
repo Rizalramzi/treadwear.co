@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors : {
-        dark : '#101415',
+        dark : '#131314',
         text_dark : '#1E1F20'
       },
       screens: {
