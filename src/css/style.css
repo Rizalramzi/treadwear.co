@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 50vw;
+    height: 92.326vw;
 }
 
 #bg-man{
@@ -11,7 +11,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 43.229vw;
+    height: 60.698vw;
 }
 
 #blog{
@@ -56,6 +56,19 @@ body::-webkit-scrollbar {
 .no-scrollbar {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+}
+
+@media (min-width: 431px) {
+  #hero{
+    height: 50vw;
+  }
+  #bg-man{
+    height: 43.229vw;
+  }
+
+  #blog{
+    background-position: top;
+  }
 }
 
   

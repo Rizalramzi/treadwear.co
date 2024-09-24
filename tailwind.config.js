@@ -8,6 +8,7 @@ module.exports = {
         text_dark : '#1E1F20'
       },
       screens: {
+        'sm': '431px',
         'xl': '1440px',
         'xxl' : '1920px'
       },
