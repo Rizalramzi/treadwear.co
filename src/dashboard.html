@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
     <title>Dashboard</title>
 </head>
-<body class=" relative space-y-[2.604vw]">
-    <nav class="flex justify-between items-center pt-[4.323vw] px-[4.271vw]">
+<body class="">
+    <nav class="flex justify-between items-center pt-[2.323vw] px-[4.271vw]">
         <div>
             <ul class="text-[0.938vw] text-white flex space-x-[1.615vw]">
                 <li>Collection</li>
@@ -22,7 +23,7 @@
             <h1 class="text-white text-[1.667vw] logo">Treadwear.co</h1>
         </div>
         <div class="hidden md:flex items-center space-x-[1.875vw]">
-            <div class="flex items-center w-[16.25vw] h-[2.917vw] pl-[1.042vw] bg-transparent border-[1.5px] border-white rounded">
+            <div class="flex items-center w-[16.25vw] h-[2.917vw] pl-[1.042vw] bg-transparent border border-white ">
                 <svg viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[1vw] h-[1vw] hover:cursor-pointer">
                     <path d="M16.031 14.617L20.314 18.899L18.899 20.314L14.617 16.031C13.0237 17.3082 11.042 18.0029 9 18C4.032 18 0 13.968 0 9C0 4.032 4.032 0 9 0C13.968 0 18 4.032 18 9C18.0029 11.042 17.3082 13.0237 16.031 14.617ZM14.025 13.875C15.2938 12.5697 16.0025 10.8204 16 9C16 5.133 12.867 2 9 2C5.133 2 2 5.133 2 9C2 12.867 5.133 16 9 16C10.8204 16.0025 12.5697 15.2938 13.875 14.025L14.025 13.875Z" fill="#FFF"/>
                 </svg>
@@ -34,16 +35,16 @@
                 </a>
             </div>
             <div>
-                <a href="">
+                <a href="login.html">
                     <img src="assets/icons/profile-icon.svg" alt="" class="w-[1.823vw]">
                 </a>
             </div>
         </div>
     </nav>
-    <div class="px-[4.271vw]">
+    <div class="px-[4.271vw] pt-[2.604vw]">
         <div class="text-white text-[0.938vw] flex justify-between">
             <ul class="space-x-[0.417vw] flex">
-                <li>Home</li>
+                <a href="index.html"><li>Home</li></a>
                 <li>/</li>
                 <li>All Products</li>
             </ul>
@@ -53,8 +54,8 @@
             </div>
         </div>
     </div>
-    <div class="text-white flex justify-between px-[4.271vw]">
-        <div class="w-[22.031vw]">
+    <div class="text-white flex justify-between px-[4.271vw] pt-[2.604vw]">
+        <div class="w-[23.031vw] overflow-y-auto max-h-[100vh] scrollbar-hide sticky top-[0.833vw]">
             <div class="space-y-[1.198vw]">
                 <div class="space-y-[0.729vw]">
                     <h2 class="text-[1.25vw] font-semibold">Filters:</h2>
@@ -62,37 +63,37 @@
                 </div>
                 <div>
                     <div class="space-y-[0.729vw]">
-                        <a href="">
+                        <a href="javascript:void(0)" onclick="toggleDropdown1()">
                             <div class="flex items-center justify-between">
                                 <h2 class="text-[1.146vw] font-medium">Type:</h2>
-                                <img id="arrowIcon" src="assets/icons/arrow-icon.svg" alt="" class="w-[0.833vw] rotate-[-180deg]"> 
+                                <img id="arrowIcon" src="assets/icons/arrow-icon.svg" alt="" class="w-[0.833vw] rotate-0">
                             </div>
                         </a>
                         <hr>
                         <div id="dropdownList" class="">
-                            <ul class="text-[0.938vw] space-y-[0.729vw]">
-                                <li class="font-medium"><a href="">T - Shirt</a></li>
-                                <li class="opacity-60"><a href="">Coat</a></li>
-                                <li class="opacity-60"><a href="">Jacket</a></li>
-                                <li class="opacity-60"><a href="">Flannel</a></li>
-                                <li class="opacity-60"><a href="">Short</a></li>
-                                <li class="opacity-60"><a href="">Pants</a></li>
-                                <li class="opacity-60"><a href="">Hoodie</a></li>
+                            <ul class="text-[0.938vw] space-y-[0.5vw] max-w-[3vw]">
+                                <li class="font-medium"><a href="">Shirt</a></li>
+                                <li class="opacity-60 hover:opacity-100"><a href="">Coat</a></li>
+                                <li class="opacity-60 hover:opacity-100"><a href="">Jacket</a></li>
+                                <li class="opacity-60 hover:opacity-100"><a href="">Flannel</a></li>
+                                <li class="opacity-60 hover:opacity-100"><a href="">Short</a></li>
+                                <li class="opacity-60 hover:opacity-100"><a href="">Pants</a></li>
+                                <li class="opacity-60 hover:opacity-100"><a href="">Hoodie</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
 
                 <div>
                     <div class="space-y-[0.729vw]">
-                        <a href="">
+                        <a href="javascript:void(0)" onclick="toggleDropdown2()">
                             <div class="flex items-center justify-between">
                                 <h2 class="text-[1.146vw] font-medium">Availability:</h2>
-                                <img id="arrowIcon" src="assets/icons/arrow-icon.svg" alt="" class="w-[0.833vw] rotate-[-180deg]"> 
+                                <img id="arrowIcon2" src="assets/icons/arrow-icon.svg" alt="" class="w-[0.833vw] rotate-0"> 
                             </div>
                         </a>
                         <hr>
-                        <div id="dropdownList" class="">
+                        <div id="dropdownList2" class="hidden">
                             <ul class="text-[0.938vw] space-y-[0.781vw]">
                                 <li class="font-medium flex items-center space-x-[0.885vw]">
                                     <input type="checkbox" name="" id="" class="w-[1.302vw] h-[1.302vw] bg-transparent accent-white" checked>
@@ -109,14 +110,14 @@
 
                 <div>
                     <div class="space-y-[0.729vw]">
-                        <a href="">
+                        <a href="javascript:void(0)" onclick="toggleDropdown3()">
                             <div class="flex items-center justify-between">
                                 <h2 class="text-[1.146vw] font-medium">Price:</h2>
-                                <img id="arrowIcon" src="assets/icons/arrow-icon.svg" alt="" class="w-[0.833vw] rotate-[-180deg]"> 
+                                <img id="arrowIcon3" src="assets/icons/arrow-icon.svg" alt="" class="w-[0.833vw] rotate-0"> 
                             </div>
                         </a>
                         <hr>
-                        <div id="dropdownList" class="">
+                        <div id="dropdownList3" class="hidden">
                             <ul class="text-[0.938vw] space-y-[1.042vw] flex items-center space-x-[0.729vw]">
                                 <li class="text-[1.042vw]">
                                     Rp
@@ -130,16 +131,16 @@
                     </div>
                 </div>
 
-                <div></div>
+                <div>
                     <div class="space-y-[0.729vw]">
-                        <a href="">
+                        <a href="javascript:void(0)" onclick="toggleDropdown4()">
                             <div class="flex items-center justify-between">
                                 <h2 class="text-[1.146vw] font-medium">Size:</h2>
-                                <img id="arrowIcon" src="assets/icons/arrow-icon.svg" alt="" class="w-[0.833vw] rotate-[-180deg]"> 
+                                <img id="arrowIcon4" src="assets/icons/arrow-icon.svg" alt="" class="w-[0.833vw] rotate-0"> 
                             </div>
                         </a>
                         <hr>
-                        <div id="dropdownList" class="">
+                        <div id="dropdownList4" class="hidden">
                             <ul class="text-[0.938vw] space-y-[0.781vw]">
                                 <li class="font-medium flex items-center space-x-[0.885vw]">
                                     <input type="checkbox" name="" id="" class="w-[1.302vw] h-[1.302vw] bg-transparent accent-white" checked>
@@ -168,11 +169,13 @@
                             </ul>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
-        <div class="w-[65.729vw]">
+        <div class="w-[65.729vw] ">
             <div class="grid grid-cols-4 gap-y-[2.344vw]">
-                <div class="flex justify-center items-center">
+                <!-- Item 1 -->
+                <div class="flex justify-center items-center col-span-2 md:col-span-1">
                     <div class="space-y-[0.885vw] relative">
                         <img src="assets/images/cloth-1.png" alt="" class="w-[15.365vw] h-[20.859vw] object-cover object-top">
                         
@@ -191,189 +194,221 @@
                         </div>
                     </div>
                 </div>
-                
+                <!-- End Item 1 -->
+
+                <!-- item 2 -->
                 <div class="flex justify-center items-center">
-                    <div class="space-y-[0.885vw]">
-                        <img src="assets/images/cloth-2.png" alt="" class="w-[15.365vw] h-[15.104vw] object-cover object-top">
+                    <div class="flex flex-col justify-between h-[20.859vw]">
+                        <img src="assets/images/cloth-2.png" alt="" class="w-[15.365vw] h-[14.90vw] object-cover object-top">
                         <div class="">
-                            <div>
-                                <h2 class="text-[0.938vw]">Black Green Grafiti Shirt</h2>
-                                <p class="text-[0.938vw] opacity-60">T - Shirt</p>
+                            <div class="mt-[10px]">
+                                <h2 class="text-[0.938vw] font-semibold">Black Green Grafiti Shirt</h2>
+                                <p class="text-[0.938vw] opacity-60 mt-[0.3vw]">T - Shirt</p>
                             </div>
-                            <div class="flex items-center space-x-[0.313vw]">
+                            <div class="flex items-center space-x-[0.313vw] mt-[0.7vw]">
                                 <h2 class="text-[1.25vw]">Rp. 175.000</h2>
                                 <h2 class="text-[0.938vw] opacity-50"><s>Rp. 350.000</s></h2>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End Item 2 -->
+
+                <!-- Item 3 -->
                 <div class="flex justify-center items-center">
-                    <div class="space-y-[0.885vw]">
+                    <div class="flex flex-col justify-between h-[20.859vw]">
                         <img src="assets/images/cloth-3.png" alt="" class="w-[15.365vw] h-[15.104vw] object-cover object-top">
                         <div class="">
-                            <div>
-                                <h2 class="text-[0.938vw]">Organic Chemistry Clean Shirt</h2>
+                            <div class="mt-[10px]">
+                                <h2 class="text-[0.938vw] font-semibold">Organic Chemistry Clean Shirt</h2>
                                 <p class="text-[0.938vw] opacity-60">T - Shirt</p>
                             </div>
-                            <div class="flex items-center space-x-[0.313vw]">
+                            <div class="flex items-center space-x-[0.313vw] mt-[1vw]">
                                 <h2 class="text-[1.25vw]">Rp. 175.000</h2>
                                 <h2 class="text-[0.938vw] opacity-50"><s>Rp. 350.000</s></h2>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End Item 3 -->
+
+                <!-- Item 4 -->
                 <div class="flex justify-center items-center">
-                    <div class="space-y-[0.885vw]">
+                    <div class="flex flex-col justify-between h-[20.859vw]">
                         <img src="assets/images/cloth-4.png" alt="" class="w-[15.365vw] h-[15.104vw] object-cover object-top">
                         <div class="">
-                            <div>
-                                <h2 class="text-[0.938vw]">Blue Ocean Shirt</h2>
+                            <div class="mt-[10px]">
+                                <h2 class="text-[0.938vw] font-semibold">Blue Ocean Shirt</h2>
                                 <p class="text-[0.938vw] opacity-60">T - Shirt</p>
                             </div>
-                            <div class="flex items-center space-x-[0.313vw]">
+                            <div class="flex items-center space-x-[0.313vw] mt-[1vw]">
                                 <h2 class="text-[1.25vw]">Rp. 175.000</h2>
                                 <h2 class="text-[0.938vw] opacity-50"><s>Rp. 350.000</s></h2>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End Item 4 -->
+
+                <!-- Item 5 -->
                 <div class="flex justify-center items-center">
-                    <div class="space-y-[0.885vw]">
+                    <div class="flex flex-col justify-between h-[20.859vw]">
                         <img src="assets/images/cloth-5.png" alt="" class="w-[15.365vw] h-[15.104vw] object-cover object-top">
                         <div class="">
-                            <div>
-                                <h2 class="text-[0.938vw]">Green White Shirt</h2>
+                            <div class="mt-[10px]">
+                                <h2 class="text-[0.938vw] font-semibold">Green White Shirt</h2>
                                 <p class="text-[0.938vw] opacity-60">T - Shirt</p>
                             </div>
-                            <div class="flex items-center space-x-[0.313vw]">
+                            <div class="flex items-center space-x-[0.313vw] mt-[1vw]">
                                 <h2 class="text-[1.25vw]">Rp. 175.000</h2>
                                 <h2 class="text-[0.938vw] opacity-50"><s>Rp. 350.000</s></h2>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End Item 5 -->
+
+                <!-- Item 6 -->
                 <div class="flex justify-center items-center">
-                    <div class="space-y-[0.885vw]">
+                    <div class="flex flex-col justify-between h-[20.859vw]">
                         <img src="assets/images/cloth-6.png" alt="" class="w-[15.365vw] h-[15.104vw] object-cover object-top">
                         <div class="">
-                            <div>
-                                <h2 class="text-[0.938vw]">Future Coming Art</h2>
+                            <div class="mt-[10px]">
+                                <h2 class="text-[0.938vw] font-semibold">Future Coming Art</h2>
                                 <p class="text-[0.938vw] opacity-60">T - Shirt</p>
                             </div>
-                            <div class="flex items-center space-x-[0.313vw]">
+                            <div class="flex items-center space-x-[0.313vw] mt-[1vw]">
                                 <h2 class="text-[1.25vw]">Rp. 175.000</h2>
                                 <h2 class="text-[0.938vw] opacity-50"><s>Rp. 350.000</s></h2>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End Item 6 -->
+
+                <!-- Item 7 -->
                 <div class="col-span-2 flex justify-center items-center">
                     <div class="relative">
                         <img src="assets/images/collections-image.png" alt="" class="w-[32.292vw] h-[20.859vw]">
                         <div class="absolute w-[32.292vw] h-[10.426vw] bg-gradient-to-t from-dark/90 to-dark/0 bottom-0"></div>
-                        <h1 class="absolute bottom-[3.75vw] px-[1.875vw] text-[2.5vw]">New Collection Out Now</h1>
-                        <button class="w-[11.042vw] h-[2.604vw] left-[1.875vw] text-dark bg-white text-[1.042vw] font-medium absolute bottom-[0.938vw]">Shop Now <span class="arrow">--></span></button>
+                        <h1 class="absolute bottom-[4.2vw] px-[1.875vw] text-[2.5vw]">New Collection Out Now</h1>
+                        <button class="w-[11.042vw] h-[2.604vw] left-[1.875vw] text-dark bg-white text-[1.042vw] font-medium absolute bottom-[1.5vw]">Shop Now <span class="arrow">--></span></button>
                     </div>
                 </div>
+                <!-- End Item 7 -->
+
+                <!-- Item 8 -->
                 <div class="flex justify-center items-center">
-                    <div class="space-y-[0.885vw]">
+                    <div class="flex flex-col justify-between h-[20.859vw]">
                         <img src="assets/images/cloth-7.png" alt="" class="w-[15.365vw] h-[15.104vw] object-cover object-top">
                         <div class="">
-                            <div>
-                                <h2 class="text-[0.938vw]">Summer Moments Shirt</h2>
+                            <div class="mt-[10px]">
+                                <h2 class="text-[0.938vw] font-semibold">Summer Moments Shirt</h2>
                                 <p class="text-[0.938vw] opacity-60">T - Shirt</p>
                             </div>
-                            <div class="flex items-center space-x-[0.313vw]">
+                            <div class="flex items-center space-x-[0.313vw] mt-[1vw]">
                                 <h2 class="text-[1.25vw]">Rp. 175.000</h2>
                                 <h2 class="text-[0.938vw] opacity-50"><s>Rp. 350.000</s></h2>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End Item 8 -->
+
+                <!-- Item 9 -->
                 <div class="flex justify-center items-center">
-                    <div class="space-y-[0.885vw]">
+                    <div class="flex flex-col justify-between h-[20.859vw]">
                         <img src="assets/images/cloth-8.png" alt="" class="w-[15.365vw] h-[15.104vw] object-cover object-top">
                         <div class="">
-                            <div>
-                                <h2 class="text-[0.938vw]">Skate Ramp Shirt</h2>
+                            <div class="mt-[10px]">
+                                <h2 class="text-[0.938vw] font-semibold">Skate Ramp Shirt</h2>
                                 <p class="text-[0.938vw] opacity-60">T - Shirt</p>
                             </div>
-                            <div class="flex items-center space-x-[0.313vw]">
+                            <div class="flex items-center space-x-[0.313vw] mt-[1vw]">
                                 <h2 class="text-[1.25vw]">Rp. 175.000</h2>
                                 <h2 class="text-[0.938vw] opacity-50"><s>Rp. 350.000</s></h2>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End Item 9 -->
+
+                <!-- Item 10 -->
                 <div class="flex justify-center items-center">
-                    <div class="space-y-[0.885vw] relative">
-                        <img src="assets/images/cloth-9.png" alt="" class="w-[15.365vw] h-[20.859vw] object-cover object-top">
-                        
-                        <div class="absolute w-[15.365vw] h-[10.426vw] bg-gradient-to-t from-dark/90 to-dark/0 bottom-0">
+                    <a href="detail.html">
+                        <div class="space-y-[0.885vw] relative">
+                            <img src="assets/images/cloth-9.png" alt="" class="w-[15.365vw] h-[20.859vw] object-cover object-top">
                             
-                            <div class="absolute bottom-0 px-[0.938vw] pb-[1vw] text-white">
-                                <div>
-                                    <h2 class="text-[0.938vw]">Soft Green Oversized</h2>
-                                    <p class="text-[0.938vw] opacity-60">T - Shirt</p>
-                                </div>
-                                <div class="flex items-center space-x-[0.313vw]">
-                                    <h2 class="text-[1.25vw]">Rp. 175.000</h2>
-                                    <h2 class="text-[0.938vw] opacity-50"><s>Rp. 350.000</s></h2>
+                            <div class="absolute w-[15.365vw] h-[10.426vw] bg-gradient-to-t from-dark/90 to-dark/0 bottom-0">
+                                
+                                <div class="absolute bottom-0 px-[0.938vw] pb-[1vw] text-white">
+                                    <div>
+                                        <h2 class="text-[0.938vw]">Soft Green Oversized</h2>
+                                        <p class="text-[0.938vw] opacity-60">T - Shirt</p>
+                                    </div>
+                                    <div class="flex items-center space-x-[0.313vw]">
+                                        <h2 class="text-[1.25vw]">Rp. 175.000</h2>
+                                        <h2 class="text-[0.938vw] opacity-50"><s>Rp. 350.000</s></h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
+                <!-- End Item 10 -->
+
+                <!-- Item 11 -->
                 <div class="flex justify-center items-center">
-                    <div class="space-y-[0.885vw]">
+                    <div class="flex flex-col justify-between h-[20.859vw]">
                         <img src="assets/images/cloth-10.png" alt="" class="w-[15.365vw] h-[15.104vw] object-cover object-top">
                         <div class="">
-                            <div>
-                                <h2 class="text-[0.938vw]">Color Grafiti Oversized Shirt</h2>
+                            <div class="mt-[10px]">
+                                <h2 class="text-[0.938vw] font-semibold">Color Grafiti Oversized Shirt</h2>
                                 <p class="text-[0.938vw] opacity-60">T - Shirt</p>
                             </div>
-                            <div class="flex items-center space-x-[0.313vw]">
+                            <div class="flex items-center space-x-[0.313vw] mt-[1vw]">
                                 <h2 class="text-[1.25vw]">Rp. 175.000</h2>
                                 <h2 class="text-[0.938vw] opacity-50"><s>Rp. 350.000</s></h2>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- End Item 11 -->
             </div>
-        </div>
         </div>
     </div>
 
-    <footer class="w-full h-[20.052vw] bg-text_dark">
-        <div class="grid grid-cols-5 pt-[3.646vw] h-[20.052vw] text-white px-[11.667vw]">
+
+    <footer class="pt-[10vw]">
+        <div class="grid grid-cols-5 py-[4vw] text-white px-[11.667vw] bg-text_dark">
             <div>
                 <ul class="space-y-[0.521vw]">
-                    <li class="text-[1.25vw] font-semibold leading-[2.604vw]">Treadwear</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Location</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">About Us</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Contact Us</li>
+                    <li class="text-[1.042vw] font-semibold leading-[2.188vw]">Treadwear</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Location</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">About Us</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Contact Us</li>
                 </ul>
             </div>
             <div>
                 <ul class="space-y-[0.521vw]">
-                    <li class="text-[1.25vw] leading-[2.604vw] font-semibold">Help</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">FAQ</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Payment</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Privacy and Policy</li>
+                    <li class="text-[1.042vw] leading-[2.188vw] font-semibold">Help</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">FAQ</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Payment</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Privacy and Policy</li>
                 </ul>
             </div>
             <div>
                 <ul class="space-y-[0.521vw]">
-                    <li class="text-[1.25vw] leading-[2.604vw] font-semibold">Customer</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Voucher</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Order Track</li>
+                    <li class="text-[1.042vw] leading-[2.188vw] font-semibold">Customer</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Voucher</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Order Track</li>
                 </ul>
             </div>
             <div>
                 <ul class="space-y-[0.521vw]">
-                    <li class="text-[1.25vw] leading-[2.604vw] font-semibold">Products</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Sale</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">New Collections</li>
+                    <li class="text-[1.042vw] leading-[2.188vw] font-semibold">Products</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Sale</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">New Collections</li>
                 </ul>
             </div>
             <div class="space-y-[0.833vw]">

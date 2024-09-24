@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
     <title>Detail</title>
 </head>
-<body class="space-y-[2.604vw]">
-    <nav class="flex justify-between items-center pt-[4.323vw] px-[4.271vw]">
+<body class="">
+    <nav class="flex justify-between items-center pt-[2.323vw] px-[4.271vw]">
         <div>
             <ul class="text-[0.938vw] text-white flex space-x-[1.615vw]">
                 <a href=""><li>Collection</li></a>
@@ -22,7 +23,7 @@
             <h1 class="text-white text-[1.667vw] logo">Treadwear.co</h1>
         </div>
         <div class="hidden md:flex items-center space-x-[1.875vw]">
-            <div class="flex items-center w-[16.25vw] h-[2.917vw] pl-[1.042vw] bg-transparent border-[1.5px] border-white rounded">
+            <div class="flex items-center w-[16.25vw] h-[2.917vw] pl-[1.042vw] bg-transparent border border-white">
                 <svg viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[1vw] h-[1vw] hover:cursor-pointer">
                     <path d="M16.031 14.617L20.314 18.899L18.899 20.314L14.617 16.031C13.0237 17.3082 11.042 18.0029 9 18C4.032 18 0 13.968 0 9C0 4.032 4.032 0 9 0C13.968 0 18 4.032 18 9C18.0029 11.042 17.3082 13.0237 16.031 14.617ZM14.025 13.875C15.2938 12.5697 16.0025 10.8204 16 9C16 5.133 12.867 2 9 2C5.133 2 2 5.133 2 9C2 12.867 5.133 16 9 16C10.8204 16.0025 12.5697 15.2938 13.875 14.025L14.025 13.875Z" fill="#FFF"/>
                 </svg>
@@ -40,32 +41,32 @@
             </div>
         </div>
     </nav>
-    <div class="px-[4.271vw]">
+    <div class="px-[4.271vw] pt-[2.604vw]">
         <div class="text-white text-[0.938vw] flex justify-between">
             <ul class="space-x-[0.417vw] flex">
-                <a href=""><li>Home</li></a>
+                <a href="index.html"><li>Home</li></a>
                 <a href=""><li>/</li></a>
-                <a href=""><li>All Products</li></a>
+                <a href="dashboard.html"><li>All Products</li></a>
                 <a href=""><li>/</li></a>
                 <a href=""><li>Soft Green Oversized Shirt</li></a>
             </ul>
         </div>
     </div>
 
-    <section class="px-[4.271vw] text-white pt-[4vw] relative">
-        <div class="w-full flex items-center">
+    <section class="px-[4.271vw] text-white pt-[3.1vw] relative">
+        <div class="w-full flex">
             <div class="w-[70vw]">
                 <div class="border border-white p-[1.563vw]">
                     <div class="flex justify-center items-center relative">
                         <div class="grid grid-cols-3 gap-[0.833vw]">
                             <div>
-                                <img src="assets/images/detail-1.png" alt="" class="w-[20vw] h-[28.542vw]">
+                                <img src="assets/images/detail-1.png" alt="" class="w-[20vw] h-[28.542vw] object-cover">
                             </div>
                             <div>
-                                <img src="assets/images/detail-2.png" alt="" class="w-[20vw] h-[28.542vw]">
+                                <img src="assets/images/detail-2.png" alt="" class="w-[20vw] h-[28.542vw] object-cover">
                             </div>
                             <div>
-                                <img src="assets/images/detail-3.png" alt="" class="w-[20vw] h-[28.542vw]">
+                                <img src="assets/images/detail-3.png" alt="" class="w-[20vw] h-[28.542vw] object-cover">
                             </div>
                         </div>
                         <button class="absolute bg-white w-[4.74vw] h-[5.885vw] right-0 flex justify-center items-center">
@@ -80,14 +81,244 @@
                         </button>
                     </div>
                 </div>
+                <section class="text-white pt-[2.604vw]">
+                    <div class="flex gap-[3vw]">
+                        <div class="flex gap-[3vw]">
+                            <!-- Rating & Review -->
+                            <div class="flex flex-col w-[22.188vw]">
+                                <h2 class="text-[1.146vw] font-semibold pb-[1.979vw]">Rating & Review</h2>
+                                <div class="space-y-[2vw]">
+                                    <div class="flex justify-between items-center">
+                                        <div class="">
+                                            <h1 class="text-[3.333vw]">4,34</h1>
+                                            <div class="flex space-x-[0.313vw]">
+                                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                            </div>
+                                            <h2 class="text-[0.938vw] font-semibold pt-[1vw]">23 Reviews</h2>
+                                        </div>
+                                        <div class="space-y-[0.5vw]">
+                                            <div class="flex items-center space-x-[0.677vw]">
+                                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                <p class="text-[1.042vw] font-semibold">1</p>
+                                                <div class="">
+                                                    <div class="w-[10.833vw] h-[0.938vw] border border-white" style="background: linear-gradient(to right, white 30%, transparent 30%);"></div>
+                                                </div>                            
+                                            </div>
+                                            <div class="flex items-center space-x-[0.677vw]">
+                                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                <p class="text-[1.042vw] font-semibold">2</p>
+                                                <div class="">
+                                                    <div class="w-[10.833vw] h-[0.938vw] border border-white" style="background: linear-gradient(to right, white 65%, transparent 65%);"></div>
+                                                </div>                            
+                                            </div>
+                                            <div class="flex items-center space-x-[0.677vw]">
+                                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                <p class="text-[1.042vw] font-semibold">3</p>
+                                                <div class="">
+                                                    <div class="w-[10.833vw] h-[0.938vw] border border-white" style="background: linear-gradient(to right, white 45%, transparent 45%);"></div>
+                                                </div>                            
+                                            </div>
+                                            <div class="flex items-center space-x-[0.677vw]">
+                                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                <p class="text-[1.042vw] font-semibold">4</p>
+                                                <div class="">
+                                                    <div class="w-[10.833vw] h-[0.938vw] border border-white" style="background: linear-gradient(to right, white 75%, transparent 75%);"></div>
+                                                </div>                            
+                                            </div>
+                                            <div class="flex items-center space-x-[0.677vw]">
+                                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                <p class="text-[1.042vw] font-semibold">5</p>
+                                                <div class="">
+                                                    <div class="w-[10.833vw] h-[0.938vw] border border-white" style="background: linear-gradient(to right, white 50%, transparent 50%);"></div>
+                                                </div>                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <h2 class="font-semibold text-[1.146vw]">Writing Review</h2>
+                                        <div class="flex items-center space-x-[0.313vw] pt-[0.99vw]">
+                                            <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[1.042vw] h-[0.938vw]">
+                                            <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[1.042vw] h-[0.938vw]">
+                                            <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[1.042vw] h-[0.938vw]">
+                                            <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[1.042vw] h-[0.938vw]">
+                                            <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[1.042vw] h-[0.938vw]">
+                                        </div>
+                                    </div>
+            
+                                    <div>
+                                        <h2 class="font-semibold text-[1.146vw]">Review</h2>
+                                        <div class=" pt-[0.99vw]">
+                                            <textarea name="" id="" class="bg-transparent border border-white placeholder:text-white placeholder:opacity-50 placeholder:text-[0.938vw] p-[1vw] w-[22.188vw] h-[7.552vw]" placeholder="Write your review here..."></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <h2 class="font-semibold text-[1.146vw]">Photo or Video (Optional)</h2>
+                                        <div class="flex flex-col items-center justify-center">
+                                            <label for="file-upload" class="cursor-pointer flex flex-col items-center justify-center w-[22.188vw] h-[15vw] ">
+                                            <div class="border p-[0.833vw]">
+                                                <img src="assets/icons/upload-icon.svg" alt="" class="w-[3.125vw] h-[3.125vw]">
+                                            </div>
+                                            <span class="text-center text-[0.938vw] pt-[1.5vw]">Upload your product photo</span>
+                                            <input id="file-upload" type="file" class="hidden" />
+                                            </label>
+                                        </div>
+                                    </div>
+            
+                                    <div>
+                                        <h2 class="font-semibold text-[1.146vw]">Your Public Name & Email</h2>
+                                        <div class="pt-[0.99vw] space-y-[1.5vw]">
+                                            <input type="text" class="w-[22.188vw] h-[4.219vw] bg-transparent border border-white placeholder:text-[0.938vw] p-[1vw]" placeholder="Your name">
+                                            <input type="email" class="w-[22.188vw] h-[4.219vw] bg-transparent border border-white placeholder:text-[0.938vw] p-[1vw]" placeholder="Your Email">
+                                        </div>
+                                        <div class="space-y-[1.5vw] mt-[2.5vw]">
+                                            <button class="w-[22.188vw] h-[2.604vw] text-dark bg-white text-[1.042vw] font-medium">Submit Review</button>
+                                            <button class="w-[22.188vw] h-[2.604vw] text-white border border-white text-[1.042vw] font-medium">Cancel Review</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Rating & Review -->
+            
+                            <!-- Customer Review -->
+                            <div class="flex flex-col w-[38.49vw]">
+                                <h2 class="text-[1.146vw] font-semibold pb-[1.979vw]">Customer Review</h2>
+                                <div class="space-y-[2.76vw]">
+                                    <div class="space-y-[1vw]">
+                                        <div class="flex justify-between">
+                                            <div class="flex space-x-[1.25vw]">
+                                                <img src="assets/images/reviewer-1.png" alt="" class="w-[4.167vw] h-[4.167vw]">
+                                                <div class="grid">
+                                                    <h2 class="text-[1.25vw] font-medium">Rick Atsley</h2>
+                                                    <div class="flex space-x-[0.313vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                    </div>
+                                                    <h2 class="text-[1vw]">The size is a bit smaller than the previous one</h2>
+                                                </div>
+                                            </div>
+                                            <p class="text-[0.938vw]">23 / 09 / 2024</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-[0.938vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt repellat debitis ut, hic consequatur pariatur.</p>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-[1vw]">
+                                        <div class="flex justify-between">
+                                            <div class="flex space-x-[1.25vw]">
+                                                <img src="assets/images/reviewer-2.png" alt="" class="w-[4.167vw] h-[4.167vw]">
+                                                <div class="grid">
+                                                    <h2 class="text-[1.25vw] font-medium">Gilbert Janong</h2>
+                                                    <div class="flex space-x-[0.313vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                    </div>
+                                                    <h2 class="text-[1vw]">The size is a bit smaller than the previous one</h2>
+                                                </div>
+                                            </div>
+                                            <p class="text-[0.938vw]">23 / 09 / 2024</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-[0.938vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt repellat debitis ut, hic consequatur pariatur.</p>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-[1vw]">
+                                        <div class="flex justify-between">
+                                            <div class="flex space-x-[1.25vw]">
+                                                <img src="assets/images/reviewer-3.png" alt="" class="w-[4.167vw] h-[4.167vw]">
+                                                <div class="grid">
+                                                    <h2 class="text-[1.25vw] font-medium">Kevin Durant</h2>
+                                                    <div class="flex space-x-[0.313vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                    </div>
+                                                    <h2 class="text-[1vw]">The size is a bit smaller than the previous one</h2>
+                                                </div>
+                                            </div>
+                                            <p class="text-[0.938vw]">23 / 09 / 2024</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-[0.938vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt repellat debitis ut, hic consequatur pariatur.</p>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-[1vw]">
+                                        <div class="flex justify-between">
+                                            <div class="flex space-x-[1.25vw]">
+                                                <img src="assets/images/reviewer-4.png" alt="" class="w-[4.167vw] h-[4.167vw]">
+                                                <div class="grid">
+                                                    <h2 class="text-[1.25vw] font-medium">Lebron James</h2>
+                                                    <div class="flex space-x-[0.313vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                    </div>
+                                                    <h2 class="text-[1vw]">The size is a bit smaller than the previous one</h2>
+                                                </div>
+                                            </div>
+                                            <p class="text-[0.938vw]">23 / 09 / 2024</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-[0.938vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt repellat debitis ut, hic consequatur pariatur.</p>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-[1vw]">
+                                        <div class="flex justify-between">
+                                            <div class="flex space-x-[1.25vw]">
+                                                <img src="assets/images/reviewer-5.png" alt="" class="w-[4.167vw] h-[4.167vw]">
+                                                <div class="grid">
+                                                    <h2 class="text-[1.25vw] font-medium">Kai Cenat</h2>
+                                                    <div class="flex space-x-[0.313vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                        <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
+                                                    </div>
+                                                    <h2 class="text-[1vw]">The size is a bit smaller than the previous one</h2>
+                                                </div>
+                                            </div>
+                                            <p class="text-[0.938vw]">23 / 09 / 2024</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-[0.938vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt repellat debitis ut, hic consequatur pariatur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Customer Review -->
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div class="w-[30vw]">
+            <div class="w-[30vw] space-y-[3vw] sticky overflow-y-auto max-h-[100vh] scrollbar-hide top-[1.2vw]">
                 <div class="ps-[2.344vw]">
                     <div class="grid gap-y-[1vw]">
                         <div class="">
                             <h2 class="text-[1.458vw] font-semibold">Soft Green Oversized</h2>
                             <p class="text-[0.938vw] opacity-60">T - Shirt</p>
-                            <p class="text-[1.8vw]">★★★★★</p>
+                            <div class="flex gap-x-[0.4vw] pt-[0.4vw]">
+                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.938vw] h-[0.938vw]">
+                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.938vw] h-[0.938vw]">
+                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.938vw] h-[0.938vw]">
+                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.938vw] h-[0.938vw]">
+                                <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.938vw] h-[0.938vw]">
+                            </div>
                         </div>
                         <div class="flex items-center space-x-[0.313vw]">
                             <h2 class="text-[1.146vw] font-medium">Rp. 175.000</h2>
@@ -145,8 +376,8 @@
                             </div>                            
                         </div>
                         <div class="text-dark space-y-[1.5vw]">
-                            <button class="bg-white w-[30vw] py-[1.5vw] text-[1.302vw] mt-[0.833vw]"><h2 class="font-medium">Add to Bag</h2></button>
-                            <button class="border border-white text-white w-[30vw] py-[1.5vw] text-[1.302vw]">
+                            <button class="bg-white w-[25vw] py-[1vw] text-[1.302vw] mt-[0.833vw]"><h2 class="font-medium">Add to Bag</h2></button>
+                            <button class="border border-white text-white w-[25vw] py-[1vw] text-[1.302vw]">
                                 <div class="flex justify-center items-center gap-x-[0.8vw]">
                                     <img src="assets/icons/love-icon.svg" alt="" class="w-[1.563vw] h-[1.302vw]">
                                     <h2 class="font-medium">Favorite</h2>
@@ -155,329 +386,103 @@
                         </div>
                     </div>
                 </div>
+                <div class="flex flex-col space-y-[2vw] ps-[2.344vw] absolute w-full">
+                    <div class="space-y-[1vw]">
+                        <a href="javascript:void(0)" onclick="productDetails()" class="space-y-[1vw]">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-[1.146vw] font-semibold">Product Details</h2>
+                                <img id="arrowIcon5" src="assets/icons/arrow-icon.svg" alt="" class="w-[0.833vw] rotate-0"> 
+                            </div>
+                            <hr class="w-full">
+                        </a>
+                        <div class="space-y-[1vw] hidden" id="ProductDetail">
+                            <div>
+                                <p class="text-[0.938vw]">Oversized Streetwear T-Shirt - "Soft Green Oversized"</p>
+                            </div>
+                            
+                            <div>
+                                <ul class="text-[0.938vw]">
+                                    <li>Color : Green</li>
+                                    <li>Size : Oversized</li>
+                                    <li>Material : 100% Cotton</li>
+                                </ul>
+                            </div>
+    
+                            <div class="text-[0.938vw]">
+                                <p>Features :</p>
+                                <ul class="list-disc ps-[1vw]">
+                                    <li>Oversized Fit: The t-shirt has a relaxed, oversized fit for a comfortable and stylish look.</li>
+                                    <li>High-Quality Material: Made from 100% soft cotton for maximum comfort and breathability.</li>
+                                    <li>Durable Construction: The t-shirt is built to last with double-stitched seams and a reinforced neckline.</li>
+                                    <li>Eye-Catching Design: Clean green graphic and text make this t-shirt a standout piece.</li>
+                                </ul>
+                            </div>
+    
+                            <div class="text-[0.938vw]">
+                                <p>Care Instructions :</p>
+                                <ul class="list-disc ps-[1vw]">
+                                    <li>Machine wash cold with like colors</li>
+                                    <li>Tumble dry low</li>
+                                    <li>Do not iron directly on the graphic</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="space-y-[1vw]">
+                        <a href="javascript:void(0)" onclick="moreInfo()" class="space-y-[1vw]">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-[1.146vw] font-semibold">More Info</h2>
+                                <img id="arrowIcon6" src="assets/icons/arrow-icon.svg" alt="" class="w-[0.833vw] rotate-0"> 
+                            </div>
+                            <hr class="w-full">
+                        </a>
+                        <div class="space-y-[1vw] hidden" id="moreInfo">
+                            <div>
+                                <p class="text-[0.938vw]">Soft Green means something different to everyone. Let this oversized T-shirt be the canvas for your story. Pair it with your favorite accessories and create a unique and personal style.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <h1 class="absolute top-[-4.5vw] left-0 right-0 bottom-0 text-[13.021vw] md:text-[12.7vw] font-extrabold text-text_dark flex justify-center z-[-1] shadow__text">
+        <h1 class="absolute top-[-6vw] left-0 right-0 bottom-0 text-[13.021vw] md:text-[12.7vw] font-extrabold text-text_dark flex justify-center z-[-1] shadow__text">
             T SHIRT
         </h1>
     </section>
 
-    <section class="text-white px-[4.271vw]">
-        <div class="flex gap-[3vw]">
-            <div class="flex gap-[3vw]">
-                <!-- Rating & Review -->
-                <div class="flex flex-col w-[22.188vw]">
-                    <h2 class="text-[1.146vw] font-semibold pb-[1.979vw]">Rating & Review</h2>
-                    <div class="space-y-[2vw]">
-                        <div class="flex justify-between items-center">
-                            <div class="">
-                                <h1 class="text-[3.333vw]">4,34</h1>
-                                <div class="flex space-x-[0.313vw]">
-                                    <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                    <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                    <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                    <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                    <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                </div>
-                                <h2 class="text-[0.938vw] font-semibold pt-[1vw]">23 Reviews</h2>
-                            </div>
-                            <div class="space-y-[0.5vw]">
-                                <div class="flex items-center space-x-[0.677vw]">
-                                    <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                    <p class="text-[1.042vw] font-semibold">1</p>
-                                    <div class="">
-                                        <div class="w-[10.833vw] h-[0.938vw] border border-white" style="background: linear-gradient(to right, white 30%, transparent 30%);"></div>
-                                    </div>                            
-                                </div>
-                                <div class="flex items-center space-x-[0.677vw]">
-                                    <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                    <p class="text-[1.042vw] font-semibold">2</p>
-                                    <div class="">
-                                        <div class="w-[10.833vw] h-[0.938vw] border border-white" style="background: linear-gradient(to right, white 65%, transparent 65%);"></div>
-                                    </div>                            
-                                </div>
-                                <div class="flex items-center space-x-[0.677vw]">
-                                    <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                    <p class="text-[1.042vw] font-semibold">3</p>
-                                    <div class="">
-                                        <div class="w-[10.833vw] h-[0.938vw] border border-white" style="background: linear-gradient(to right, white 45%, transparent 45%);"></div>
-                                    </div>                            
-                                </div>
-                                <div class="flex items-center space-x-[0.677vw]">
-                                    <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                    <p class="text-[1.042vw] font-semibold">4</p>
-                                    <div class="">
-                                        <div class="w-[10.833vw] h-[0.938vw] border border-white" style="background: linear-gradient(to right, white 75%, transparent 75%);"></div>
-                                    </div>                            
-                                </div>
-                                <div class="flex items-center space-x-[0.677vw]">
-                                    <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                    <p class="text-[1.042vw] font-semibold">5</p>
-                                    <div class="">
-                                        <div class="w-[10.833vw] h-[0.938vw] border border-white" style="background: linear-gradient(to right, white 50%, transparent 50%);"></div>
-                                    </div>                            
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <h2 class="font-semibold text-[1.146vw]">Writing Review</h2>
-                            <div class="flex items-center space-x-[0.313vw] pt-[0.99vw]">
-                                <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[1.042vw] h-[0.938vw]">
-                                <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[1.042vw] h-[0.938vw]">
-                                <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[1.042vw] h-[0.938vw]">
-                                <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[1.042vw] h-[0.938vw]">
-                                <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[1.042vw] h-[0.938vw]">
-                            </div>
-                        </div>
+    
 
-                        <div>
-                            <h2 class="font-semibold text-[1.146vw]">Review</h2>
-                            <div class=" pt-[0.99vw]">
-                                <textarea name="" id="" class="bg-transparent border border-white placeholder:text-white placeholder:opacity-50 placeholder:text-[0.938vw] p-[1vw] w-[22.188vw] h-[7.552vw]" placeholder="Write your review here..."></textarea>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <h2 class="font-semibold text-[1.146vw]">Photo or Video (Optional)</h2>
-                            <div class="flex flex-col items-center justify-center">
-                                <label for="file-upload" class="cursor-pointer flex flex-col items-center justify-center w-[22.188vw] h-[15vw] ">
-                                <div class="border p-[0.833vw]">
-                                    <img src="assets/icons/upload-icon.svg" alt="" class="w-[3.125vw] h-[3.125vw]">
-                                </div>
-                                <span class="text-center text-[0.938vw] pt-[1.5vw]">Upload your product photo</span>
-                                <input id="file-upload" type="file" class="hidden" />
-                                </label>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h2 class="font-semibold text-[1.146vw]">Your Public Name & Email</h2>
-                            <div class="pt-[0.99vw] space-y-[1.5vw]">
-                                <input type="text" class="w-[22.188vw] h-[4.219vw] bg-transparent border border-white placeholder:text-[0.938vw] p-[1vw]" placeholder="Your name">
-                                <input type="email" class="w-[22.188vw] h-[4.219vw] bg-transparent border border-white placeholder:text-[0.938vw] p-[1vw]" placeholder="Your Email">
-                            </div>
-                            <div class="space-y-[1.5vw] mt-[2.5vw]">
-                                <button class="w-[22.188vw] h-[2.604vw] text-dark bg-white text-[1.042vw] font-medium">Submit Review</button>
-                                <button class="w-[22.188vw] h-[2.604vw] text-white border border-white text-[1.042vw] font-medium">Cancel Review</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Rating & Review -->
-
-                <!-- Customer Review -->
-                <div class="flex flex-col w-[38.49vw]">
-                    <h2 class="text-[1.146vw] font-semibold pb-[1.979vw]">Customer Review</h2>
-                    <div class="space-y-[2.76vw]">
-                        <div class="space-y-[1vw]">
-                            <div class="flex justify-between">
-                                <div class="flex space-x-[1.25vw]">
-                                    <img src="assets/images/reviewer-1.png" alt="" class="w-[4.167vw] h-[4.167vw]">
-                                    <div class="grid">
-                                        <h2 class="text-[1.25vw] font-medium">Rick Atsley</h2>
-                                        <div class="flex space-x-[0.313vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                        </div>
-                                        <h2 class="text-[1vw]">The size is a bit smaller than the previous one</h2>
-                                    </div>
-                                </div>
-                                <p class="text-[0.938vw]">23 / 09 / 2024</p>
-                            </div>
-                            <div>
-                                <p class="text-[0.938vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt repellat debitis ut, hic consequatur pariatur.</p>
-                            </div>
-                        </div>
-                        <div class="space-y-[1vw]">
-                            <div class="flex justify-between">
-                                <div class="flex space-x-[1.25vw]">
-                                    <img src="assets/images/reviewer-2.png" alt="" class="w-[4.167vw] h-[4.167vw]">
-                                    <div class="grid">
-                                        <h2 class="text-[1.25vw] font-medium">Gilbert Janong</h2>
-                                        <div class="flex space-x-[0.313vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                        </div>
-                                        <h2 class="text-[1vw]">The size is a bit smaller than the previous one</h2>
-                                    </div>
-                                </div>
-                                <p class="text-[0.938vw]">23 / 09 / 2024</p>
-                            </div>
-                            <div>
-                                <p class="text-[0.938vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt repellat debitis ut, hic consequatur pariatur.</p>
-                            </div>
-                        </div>
-                        <div class="space-y-[1vw]">
-                            <div class="flex justify-between">
-                                <div class="flex space-x-[1.25vw]">
-                                    <img src="assets/images/reviewer-3.png" alt="" class="w-[4.167vw] h-[4.167vw]">
-                                    <div class="grid">
-                                        <h2 class="text-[1.25vw] font-medium">Kevin Durant</h2>
-                                        <div class="flex space-x-[0.313vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                        </div>
-                                        <h2 class="text-[1vw]">The size is a bit smaller than the previous one</h2>
-                                    </div>
-                                </div>
-                                <p class="text-[0.938vw]">23 / 09 / 2024</p>
-                            </div>
-                            <div>
-                                <p class="text-[0.938vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt repellat debitis ut, hic consequatur pariatur.</p>
-                            </div>
-                        </div>
-                        <div class="space-y-[1vw]">
-                            <div class="flex justify-between">
-                                <div class="flex space-x-[1.25vw]">
-                                    <img src="assets/images/reviewer-4.png" alt="" class="w-[4.167vw] h-[4.167vw]">
-                                    <div class="grid">
-                                        <h2 class="text-[1.25vw] font-medium">Lebron James</h2>
-                                        <div class="flex space-x-[0.313vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                        </div>
-                                        <h2 class="text-[1vw]">The size is a bit smaller than the previous one</h2>
-                                    </div>
-                                </div>
-                                <p class="text-[0.938vw]">23 / 09 / 2024</p>
-                            </div>
-                            <div>
-                                <p class="text-[0.938vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt repellat debitis ut, hic consequatur pariatur.</p>
-                            </div>
-                        </div>
-                        <div class="space-y-[1vw]">
-                            <div class="flex justify-between">
-                                <div class="flex space-x-[1.25vw]">
-                                    <img src="assets/images/reviewer-5.png" alt="" class="w-[4.167vw] h-[4.167vw]">
-                                    <div class="grid">
-                                        <h2 class="text-[1.25vw] font-medium">Kai Cenat</h2>
-                                        <div class="flex space-x-[0.313vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                            <img src="assets/icons/outline-stars-icon.svg" alt="" class="w-[0.987vw] h-[0.943vw]">
-                                        </div>
-                                        <h2 class="text-[1vw]">The size is a bit smaller than the previous one</h2>
-                                    </div>
-                                </div>
-                                <p class="text-[0.938vw]">23 / 09 / 2024</p>
-                            </div>
-                            <div>
-                                <p class="text-[0.938vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt repellat debitis ut, hic consequatur pariatur.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Customer Review -->
-            </div>
-
-            <!-- Product Details -->
-            <div class="flex flex-col w-[24.427vw] space-y-[2vw]">
-                <div class="space-y-[1vw]">
-                    <a href="" class="space-y-[1vw]">
-                        <div class="flex items-center justify-between">
-                            <h2 class="text-[1.146vw] font-semibold">Product Details</h2>
-                            <img id="arrowIcon" src="assets/icons/arrow-icon.svg" alt="" class="w-[0.833vw] rotate-[-180deg]"> 
-                        </div>
-                        <hr class="w-full">
-                    </a>
-                    <div class="space-y-[1vw]" id="details">
-                        <div>
-                            <p class="text-[0.938vw]">Oversized Streetwear T-Shirt - "Soft Green Oversized"</p>
-                        </div>
-                        
-                        <div>
-                            <ul class="text-[0.938vw]">
-                                <li>Color : Green</li>
-                                <li>Size : Oversized</li>
-                                <li>Material : 100% Cotton</li>
-                            </ul>
-                        </div>
-
-                        <div class="text-[0.938vw]">
-                            <p>Features :</p>
-                            <ul class="list-disc ps-[1vw]">
-                                <li>Oversized Fit: The t-shirt has a relaxed, oversized fit for a comfortable and stylish look.</li>
-                                <li>High-Quality Material: Made from 100% soft cotton for maximum comfort and breathability.</li>
-                                <li>Durable Construction: The t-shirt is built to last with double-stitched seams and a reinforced neckline.</li>
-                                <li>Eye-Catching Design: Clean green graphic and text make this t-shirt a standout piece.</li>
-                            </ul>
-                        </div>
-
-                        <div class="text-[0.938vw]">
-                            <p>Care Instructions :</p>
-                            <ul class="list-disc ps-[1vw]">
-                                <li>Machine wash cold with like colors</li>
-                                <li>Tumble dry low</li>
-                                <li>Do not iron directly on the graphic</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="space-y-[1vw]"></div>
-                    <a href="" class="space-y-[1vw]">
-                        <div class="flex items-center justify-between">
-                            <h2 class="text-[1.146vw] font-semibold">More Info</h2>
-                            <img id="arrowIcon" src="assets/icons/arrow-icon.svg" alt="" class="w-[0.833vw] rotate-[-180deg]"> 
-                        </div>
-                        <hr class="w-full">
-                    </a>
-                    <div class="space-y-[1vw]" id="details">
-                        <div>
-                            <p class="text-[0.938vw]">Soft Green means something different to everyone. Let this oversized T-shirt be the canvas for your story. Pair it with your favorite accessories and create a unique and personal style.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           <!-- End Product Details -->
-        </div>
-    </section>
-
-    <footer class="w-full h-[20.052vw] bg-text_dark">
-        <div class="grid grid-cols-5 pt-[3.646vw] h-[20.052vw] text-white px-[11.667vw]">
+    <footer class="pt-[10vw]">
+        <div class="grid grid-cols-5 py-[4vw] text-white px-[11.667vw] bg-text_dark">
             <div>
                 <ul class="space-y-[0.521vw]">
-                    <li class="text-[1.25vw] font-semibold leading-[2.604vw]">Treadwear</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Location</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">About Us</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Contact Us</li>
+                    <li class="text-[1.042vw] font-semibold leading-[2.188vw]">Treadwear</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Location</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">About Us</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Contact Us</li>
                 </ul>
             </div>
             <div>
                 <ul class="space-y-[0.521vw]">
-                    <li class="text-[1.25vw] leading-[2.604vw] font-semibold">Help</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">FAQ</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Payment</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Privacy and Policy</li>
+                    <li class="text-[1.042vw] leading-[2.188vw] font-semibold">Help</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">FAQ</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Payment</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Privacy and Policy</li>
                 </ul>
             </div>
             <div>
                 <ul class="space-y-[0.521vw]">
-                    <li class="text-[1.25vw] leading-[2.604vw] font-semibold">Customer</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Voucher</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Order Track</li>
+                    <li class="text-[1.042vw] leading-[2.188vw] font-semibold">Customer</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Voucher</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Order Track</li>
                 </ul>
             </div>
             <div>
                 <ul class="space-y-[0.521vw]">
-                    <li class="text-[1.25vw] leading-[2.604vw] font-semibold">Products</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">Sale</li>
-                    <li class="text-[1.25vw] leading-[2.604vw]">New Collections</li>
+                    <li class="text-[1.042vw] leading-[2.188vw] font-semibold">Products</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">Sale</li>
+                    <li class="text-[1.042vw] leading-[2.188vw]">New Collections</li>
                 </ul>
             </div>
             <div class="space-y-[0.833vw]">
