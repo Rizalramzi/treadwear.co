@@ -9,8 +9,8 @@
     <title>Home</title>
 </head>
 <body id="body">
-    <div id="nav" class="w-[100vw] h-[216.744vw] overflow-x-hidden absolute">
-        <div id="sidebar" class="absolute right-0 bg-white z-[2] w-[100vw] h-[216.744vw] px-[8.372vw] slide-out-active">
+    <div id="nav" class="w-[100vw] h-[216.744vw] overflow-x-hidden fixed sm:hidden inline pointer-events-none z-30">
+        <div id="sidebar" class="absolute right-0 bg-white w-[100vw] h-[216.744vw] px-[8.372vw] slide-out-active">
             <button id="cross" class="ml-[76.512vw] mt-[9.767vw]"><img src="assets/icons/close-icon.svg" alt=""></button>
             <h1 class="text-black text-[4.651vw] text-center logo">Treadwear.co</h1>
             <div class="flex items-center space-x-8 mt-[12.279vw]">
@@ -77,7 +77,7 @@
             <div class="flex flex-col justify-center items-center sm:space-y-[1.563vw] space-y-[2.093vw]">
                 <h1 class="text-white sm:text-[5.208vw] text-[9.302vw] tracking-[0.417vw] sm:leading-[3.125vw] leading-[8.372vw]">New Product Out Now</h1>
                 <p class="text-white sm:text-[0.938vw] text-[2.791vw] font-medium">New edition for winter</p>
-                <button class="sm:w-[11.042vw] w-[41.86vw] sm:h-[2.604vw] h-[9.767vw] text-dark bg-white sm:text-[1.042vw] text-[3.256vw] font-medium">Shop Now <span class="arrow">--></span></button>
+                <button class="sm:w-[11.042vw] w-[41.86vw] sm:h-[2.604vw] h-[9.767vw] text-dark bg-white sm:text-[1.042vw] text-[3.256vw] font-medium"><a href="dashboard.html">Shop Now <span class="arrow">--></span></a></button>
             </div>
         </div>
     </section>
@@ -97,13 +97,17 @@
     </section>
 
     <section class="sm:pt-[7.813vw] pt-[12.558vw] sm:px-[11.667vw] pl-[8.372vw]">
-        <div class="text-white sm:space-y-[2.813vw] space-y-[7.442vw]">
+        <div class="text-white sm:space-y-[2.813vw] space-y-[7.442vw] relative">
             <div class="relative flex items-center">
                 <h1 class="sm:text-[3.333vw] text-[5.581vw]">Best Seller</h1>
                 <h1 class="absolute z-[-1] leading-none sm:text-[7.813vw] text-[13.953vw] text-text_dark shadow__text tracking-[0.833vw] font-bold">BEST</h1>
             </div>
+            <!-- Tombol Navigasi Kiri -->
+            <button id="prevBtn" class="absolute left-0 sm:block hidden top-[16.427vw] w-[4.74vw] h-[5.885vw] transform text-[2.5vw] bg-white text-black">
+                &#10094;
+            </button>
             <!-- Slider Container -->
-            <div class="flex sm:gap-[1.042vw] gap-[4.651vw] w-full overflow-x-auto no-scrollbar snap-mandatory">
+            <div id="sliderContainer" class="flex sm:gap-[1.042vw] gap-[4.651vw] w-full overflow-x-auto no-scrollbar snap-mandatory">
                 <!-- Card 1 -->
                 <div class="flex-shrink-0 flex justify-center items-center sm:w-[18.385vw] w-[39.302vw]">
                     <div class="sm:space-y-[1.667vw] space-y-[7.442vw]">
@@ -231,14 +235,18 @@
                     </div>
                 </div>
             </div>
+            <!-- Tombol Navigasi Kanan -->
+            <button id="nextBtn" class="absolute right-0 sm:block hidden top-[16.427vw] w-[4.74vw] h-[5.885vw] transform text-[2.5vw]  bg-white text-black">
+                &#10095;
+            </button>
         </div>
     </section>
     
 
-    <section class="pt-[7.813vw] sm:px-[11.667vw] px-[8.372vw]">
+    <section class="sm:pt-[7.813vw] pt-[21.86vw] sm:px-[11.667vw] px-[8.372vw]">
         <div class="w-full h-[9.375vw] text-white text-center relative flex justify-center items-center">
-                <h1 class="text-[3.333vw]">Best Offer</h1>
-                <h1 class="absolute z-[-1] text-[7.813vw] leading-none text-text_dark flex justify-center tracking-[0.833vw] shadow__text font-bold">OFFER</h1>
+                <h1 class="sm:text-[3.333vw] text-[5.581vw]">Best Offer</h1>
+                <h1 class="absolute z-[-1] sm:text-[7.813vw] text-[13.953vw] leading-none text-text_dark flex justify-center tracking-[0.833vw] shadow__text font-bold">OFFER</h1>
         </div>
         <div class="w-full mt-8 flex sm:flex-row flex-col sm:gap-[1.042vw] gap-[2.791vw] ">
             <!-- Bagian kiri full dengan image -->
@@ -282,7 +290,7 @@
         </div>
     </section>
     
-    <section id="blog" class="mt-[7.813vw] py-[3.333vw] w-full sm:h-[30.26vw] h-[120.465vw] relative">
+    <section id="blog" class="sm:mt-[7.813vw] mt-[19.535vw] py-[3.333vw] w-full sm:h-[30.26vw] h-[120.465vw] relative">
         <h1 class="mt-[-2.604vw] ml-[-6.25vw] absolute sm:text-[13.021vw] text-[16.279vw] opacity-50 shadow__text text-white">BLOG</h1>
         <div class="relative w-full pl-[11.667vw] flex sm:flex-row flex-col text-white gap-[1.667vw]">
             <div class="w-auto flex flex-col h-auto justify-center items-start sm:mt-0 mt-[5.972vw]">
@@ -297,7 +305,7 @@
                             <img class="sm:w-[24.896vw] w-[93.023vw]" src="assets/images/blog-1.png" alt="">
                             <h2 class="sm:text-[1.354vw] text-[4.651vw] text-dark font-semibold">New Edition Coming Soon</h2>
                             <img class="sm:w-[2.083vw] w-[4.977vw]" src="assets/icons/insta-icon.svg" alt="">
-                            <p class="sm:w-[24.896vw] w-[93.023vw] text-dark sm:text-[0.938vw] text-[2.791vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam est molestiae ipsam perferendis dolorum ullam. Ullam minus sed asperiores.</p>
+                            <p class="sm:w-[24.896vw] w-[78.14vw] text-dark sm:text-[0.938vw] text-[2.791vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam est molestiae ipsam perferendis dolorum ullam. Ullam minus sed asperiores.</p>
                             <div class="text-dark">
                                 <a href="#" class="sm:text-[0.938vw] text-[2.791vw] underline hover:ps-4 transition-all ease-in-out duration-300">
                                     Learn More <span class="inline-block ps-0 transition-all ease-in-out duration-300">&rarr;</span>
@@ -310,7 +318,7 @@
                             <img class="sm:w-[24.896vw] w-[93.023vw]" src="assets/images/blog-1.png" alt="">
                             <h2 class="sm:text-[1.354vw] text-[4.651vw] text-dark font-semibold">New Edition Coming Soon</h2>
                             <img class="sm:w-[2.083vw] w-[4.977vw]" src="assets/icons/insta-icon.svg" alt="">
-                            <p class="sm:w-[24.896vw] w-[93.023vw] text-dark sm:text-[0.938vw] text-[2.791vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam est molestiae ipsam perferendis dolorum ullam. Ullam minus sed asperiores.</p>
+                            <p class="sm:w-[24.896vw] w-[78.14vw] text-dark sm:text-[0.938vw] text-[2.791vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam est molestiae ipsam perferendis dolorum ullam. Ullam minus sed asperiores.</p>
                             <div class="text-dark">
                                 <a href="#" class="sm:text-[0.938vw] text-[2.791vw] underline hover:ps-4 transition-all ease-in-out duration-300">
                                     Learn More <span class="inline-block ps-0 transition-all ease-in-out duration-300">&rarr;</span>
@@ -323,7 +331,7 @@
                             <img class="sm:w-[24.896vw] w-[93.023vw]" src="assets/images/blog-1.png" alt="">
                             <h2 class="sm:text-[1.354vw] text-[4.651vw] text-dark font-semibold">New Edition Coming Soon</h2>
                             <img class="sm:w-[2.083vw] w-[4.977vw]" src="assets/icons/insta-icon.svg" alt="">
-                            <p class="sm:w-[24.896vw] w-[93.023vw] text-dark sm:text-[0.938vw] text-[2.791vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam est molestiae ipsam perferendis dolorum ullam. Ullam minus sed asperiores.</p>
+                            <p class="sm:w-[24.896vw] w-[78.14vw] text-dark sm:text-[0.938vw] text-[2.791vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam est molestiae ipsam perferendis dolorum ullam. Ullam minus sed asperiores.</p>
                             <div class="text-dark">
                                 <a href="#" class="sm:text-[0.938vw] text-[2.791vw] underline hover:ps-4 transition-all ease-in-out duration-300">
                                     Learn More <span class="inline-block ps-0 transition-all ease-in-out duration-300">&rarr;</span>
@@ -417,25 +425,53 @@
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-          const slider = document.getElementById('sidebar');
-          const body = document.getElementById('body');
-          const nav = document.getElementById('nav');
-          const openButton = document.getElementById('hamburger');
-          const closeButton = document.getElementById('cross');
+            const sidebar = document.getElementById('sidebar');
+            const body = document.getElementById('body');
+            const nav = document.getElementById('nav');
+            const openButton = document.getElementById('hamburger');
+            const closeButton = document.getElementById('cross');
 
-          // Tombol untuk Slide In
-          openButton.addEventListener('click', () => {
-            slider.classList.remove('slide-out-active');
-            slider.classList.add('slide-in-active');
-            body.classList.add('overflow-y-hidden');
+            // Tombol untuk Slide In
+            openButton.addEventListener('click', () => {
+              sidebar.classList.remove('slide-out-active');
+              sidebar.classList.add('slide-in-active');
+              body.classList.add('overflow-y-hidden');
+              nav.classList.remove('pointer-events-none');
+            });
+          
+            // Tombol untuk Slide Out   
+            closeButton.addEventListener('click', () => {
+              sidebar.classList.remove('slide-in-active');
+              sidebar.classList.add('slide-out-active');
+              body.classList.remove('overflow-y-hidden');
+              nav.classList.add('pointer-events-none'); 
+            });
+
+          const slider = document.getElementById('sliderContainer');
+          const prevBtn = document.getElementById('prevBtn');
+          const nextBtn = document.getElementById('nextBtn');
+              
+          // Konversi dari vw ke pixel
+          function vwToPx(vw) {
+              return (vw / 100) * window.innerWidth;
+          }
+          
+          const scrollAmountVW = 19.427; // Misalkan 20vw
+          let scrollAmountPx = vwToPx(scrollAmountVW); // Konversi 20vw ke pixel
+          
+          nextBtn.addEventListener('click', () => {
+              slider.scrollBy({ left: scrollAmountPx, behavior: 'smooth' });
           });
-      
-          // Tombol untuk Slide Out
-          closeButton.addEventListener('click', () => {
-            slider.classList.remove('slide-in-active');
-            slider.classList.add('slide-out-active');
-            body.classList.remove('overflow-y-hidden');
+          
+          prevBtn.addEventListener('click', () => {
+              slider.scrollBy({ left: -scrollAmountPx, behavior: 'smooth' });
           });
+          
+          // Update nilai scrollAmount saat ukuran viewport berubah
+          window.addEventListener('resize', () => {
+              scrollAmountPx = vwToPx(scrollAmountVW);
+          });
+
         });
 
     </script>
