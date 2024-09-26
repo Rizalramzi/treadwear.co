@@ -34,7 +34,7 @@
   background-image: url('../assets/images/register-image.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 body::-webkit-scrollbar {
