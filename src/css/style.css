@@ -1,6 +1,3 @@
-#nav{
-  transition: 0.2s;
-}
 #hero{
     background-image: url("../assets/images/bg-hero.png");
     background-size: cover;
@@ -76,6 +73,17 @@ body::-webkit-scrollbar {
 /* Custom Slide Out Animation */
 .slide-out-active {
   transform: translateX(100%);
+  transition: transform 0.2s ease-out;
+}
+
+.slide-in-left-active {
+  transform: translateX(0%);
+  transition: transform 0.2s ease-out;
+}
+
+/* Custom Slide Out Animation */
+.slide-out-left-active {
+  transform: translateX(-100%);
   transition: transform 0.2s ease-out;
 }
 
