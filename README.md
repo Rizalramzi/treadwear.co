@@ -4,7 +4,7 @@ Treadwear adalah merek streetwear terbaik di Asia, yang memadukan desain berani 
 <br>
 
 # Run Website Treadwear.co
-
+Pastikan perangkat tersambung internet
 ## 1. Clone repositori ini dengan command :
 `git clone https://github.com/Rizalramzi/treadwear.co.git`
 
@@ -18,7 +18,10 @@ Treadwear adalah merek streetwear terbaik di Asia, yang memadukan desain berani 
 Lalu klik tombol `Go Live` dibawah kanan <br> <br>
 <img src="https://github.com/Rizalramzi/treadwear.co/blob/arka/src/assets/readme/start.png" align="middle" width="desired width" height="desired heigh">
 
-## 4. Website sudah dijalankan
+## 4. Menjalankan Tailwind
+`npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch`
+
+## 5. Website sudah dijalankan
 <br>
 <img src="https://github.com/Rizalramzi/treadwear.co/blob/arka/src/assets/readme/website.png" align="middle" width="desired width" height="desired heigh">
 
