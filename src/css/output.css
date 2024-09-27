@@ -782,6 +782,10 @@ video {
   margin-top: 6.977vw;
 }
 
+.mt-\[6vw\] {
+  margin-top: 6vw;
+}
+
 .mt-\[7\.442vw\] {
   margin-top: 7.442vw;
 }
@@ -792,6 +796,10 @@ video {
 
 .mt-\[9\.767vw\] {
   margin-top: 9.767vw;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .block {
