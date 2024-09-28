@@ -58,3 +58,39 @@ Setelah memilih item, pengguna diarahkan ke halaman Detail Item yang menampilkan
 - Tombol `Tambah Keranjang` dan `Favorit`
 - Form Ulasan
 
+## Analisa UX
+### Pengertian
+Sudut pandang pengalaman pengguna (UX) adalah kunci dalam menciptakan desain antarmuka (UI) yang tidak hanya menarik secara visual, tetapi juga efektif dan efisien dalam memenuhi kebutuhan pengguna. Seperti rumah. Desain interior dan eksterior yang indah sangat penting, tetapi yang lebih penting lagi adalah memastikan rumah tersebut nyaman, fungsional, dan memenuhi kebutuhan penghuninya. Begitu pula dengan desain UI website kami. <br>
+Mengapa sudut pandang UX penting menurut kami?
+
+### Fokus Pada Pengguna
+UX menempatkan pengguna di pusat perhatian. Tujuannya adalah memahami bagaimana pengguna berpikir, merasa, dan berinteraksi dengan produk atau layanan. Dengan memahami perspektif pengguna, desainer dapat menciptakan pengalaman yang intuitif dan menyenangkan.
+
+### Meningkatkan Kegunaan
+Desain UI yang baik harus mudah digunakan. Prinsip-prinsip UX membantu memastikan bahwa pengguna dapat dengan mudah menemukan apa yang mereka cari, menyelesaikan tugas, dan mencapai tujuan mereka tanpa merasa kesulitan.
+
+### Membangun Kepuasan
+Pengalaman pengguna yang positif akan membuat pengguna lebih loyal terhadap produk atau layanan. Ketika pengguna merasa puas dengan pengalaman mereka, mereka cenderung menggunakan produk tersebut secara berulang dan merekomendasikannya kepada orang lain.
+
+### Meningkatkan Konversi 
+Desain UI yang baik dapat meningkatkan tingkat konversi, misalnya mengubah pengunjung website menjadi pelanggan atau mendorong pengguna untuk melakukan pembelian.
+
+### Membedakan Produk
+Dalam pasar yang kompetitif, pengalaman pengguna yang unik dapat menjadi pembeda antara produk Anda dengan produk pesaing.
+
+## Penerapan dalam Treadwear.co
+### Foto dan Ilustrasi yang Profesional
+Kami menggunakan foto dan ilustrasi yang professional, hal ini selain untuk mendukung visual dan estetika namun juga meningkatkan pengalaman pengguna saat mencari atau melihat lihat produk yang tersedia pada website kami.
+
+### Desain Responsif
+Desain yang menyesuaikan diri dengan berbagai ukuran layar (desktop, tablet, ponsel) memastikan pengalaman pengguna yang konsisten di mana pun mereka mengakses aplikasi atau website. Fitur fitur pada design responsive juga dapat mendukung pengguna dalam menggunakan website dalam berbagai perangkat selain computer seperti tablet maupun handphone.
+
+### Animasi dan Transisi Interaktif
+Kami juga menambahkan berbagai animasi dan transisi pada website kami, contohnya saja seperti animasi hover, animasi sidebar, dan yang lainnya. Transisi ini mendukung tampilan website kami menjadi lebih baik lagi tidak hanya secara tampilan tapi juga secara pergerakan antar objek pada website kami.
+
+### Bahasa Yang Sederhana
+Menggunakan bahasa yang mudah dipahami dan menghindari jargon teknis membuat produk lebih mudah diakses oleh pengguna dari berbagai latar belakang, jadi pengguna dapat memahami produk pada website kami dengan mudah karena penggunaan Bahasa yang sederhana.
+
+### Aestetika yang Menarik
+Websiten kami juga sangat memperhatikan estetika tampilan dari website kami, mulai dari pemilihan warna, font, gambar, video, dan yang lainnya. Hal ini diharapkan dapat meningkatkan kepuasan pengguna saat mengunjungi website kami melalui visual yang sudah kami rancang.
+
