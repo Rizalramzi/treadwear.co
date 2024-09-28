@@ -30,5 +30,31 @@ Lalu klik tombol `Go Live` dibawah kanan <br> <br>
 
 # Cara Kerja Website
 ## Alur Pengguna
-Melakukan Registrasi / Login -> Masuk halaman Dashboard -> Memilih Item `(Pakaian)` yang tersedia -> Masuk halaman Detail item -> Checkout item
+### Melakukan Registrasi / Login dengan mengisi data sebagai berikut : <br>
+- `Alamat Email`
+- `Password`
+
+### Masuk halaman Dashboard : <br>
+Setelah Login / Register, pengguna diarahkan ke halaman Dashboard, yang menampilkan : 
+- Menu navigasi ( `Collection` `Product` `Blog` `Store Location` )
+- Rekomendasi item berdasarkan preferensi atau tren
+- Pencarian item berdasarkan kategori atau filter ( `Type` `Availability` `Price` `Size` )
+- Daftar item yang tersedia dengan `Gambar` `Harga` dan `Tipe`
+
+### Memilih Item : <br>
+Pengguna bisa memilih item dari daftar atau menggunakan fitur pencarian. <br>
+Terdapat beberapa filter untuk memudahkan pencarian item, seperti:
+- Tipe ( `Shirt` `Coat` `Jacket` `Flannel` `Short` `Pants` `Hoodie` )
+- Ukuran ( `S` `M` `L` `XL` `XXL` `XXXL` )
+- Rentang harga
+
+### Masuk ke halaman Detail : <br>
+Setelah memilih item, pengguna diarahkan ke halaman Detail Item yang menampilkan:
+- Gambar besar dari Item
+- Deskripsi Lengkap ( `Color` `Size` `Material` `Features` `Care Instruction`)
+- Harga
+- Opsi Ukuran
+- Ulasan Pengguna Lain
+- Tombol `Tambah Keranjang` dan `Favorit`
+- Form Ulasan
 
