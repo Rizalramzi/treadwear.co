@@ -84,7 +84,7 @@ Kami menggunakan foto dan ilustrasi yang professional, hal ini selain untuk mend
 <img src="https://github.com/Rizalramzi/treadwear.co/blob/arka/src/assets/readme/ux-1.png" align="middle" width="desired width" height="desired heigh">
 
 ### Desain Responsif
-Desain yang menyesuaikan diri dengan berbagai ukuran layar (desktop, tablet, ponsel) memastikan pengalaman pengguna yang konsisten di mana pun mereka mengakses aplikasi atau website. Fitur fitur pada design responsive juga dapat mendukung pengguna dalam menggunakan website dalam berbagai perangkat selain computer seperti tablet maupun handphone.
+Desain yang menyesuaikan diri dengan berbagai ukuran layar (desktop, tablet, ponsel) memastikan pengalaman pengguna yang konsisten di mana pun mereka mengakses aplikasi atau website. Fitur fitur pada design responsive juga dapat mendukung pengguna dalam menggunakan website dalam berbagai perangkat selain computer seperti tablet maupun handphone. <br>
 <img src="https://github.com/Rizalramzi/treadwear.co/blob/arka/src/assets/readme/ux-2.png" align="middle" width="desired width" height="desired heigh">
 
 ### Animasi dan Transisi Interaktif
