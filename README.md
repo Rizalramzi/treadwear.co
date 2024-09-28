@@ -81,9 +81,11 @@ Dalam pasar yang kompetitif, pengalaman pengguna yang unik dapat menjadi pembeda
 ## Penerapan dalam Treadwear.co
 ### Foto dan Ilustrasi yang Profesional
 Kami menggunakan foto dan ilustrasi yang professional, hal ini selain untuk mendukung visual dan estetika namun juga meningkatkan pengalaman pengguna saat mencari atau melihat lihat produk yang tersedia pada website kami.
+<img src="https://github.com/Rizalramzi/treadwear.co/blob/arka/src/assets/readme/ux-1.png" align="middle" width="desired width" height="desired heigh">
 
 ### Desain Responsif
 Desain yang menyesuaikan diri dengan berbagai ukuran layar (desktop, tablet, ponsel) memastikan pengalaman pengguna yang konsisten di mana pun mereka mengakses aplikasi atau website. Fitur fitur pada design responsive juga dapat mendukung pengguna dalam menggunakan website dalam berbagai perangkat selain computer seperti tablet maupun handphone.
+<img src="https://github.com/Rizalramzi/treadwear.co/blob/arka/src/assets/readme/ux-2.png" align="middle" width="desired width" height="desired heigh">
 
 ### Animasi dan Transisi Interaktif
 Kami juga menambahkan berbagai animasi dan transisi pada website kami, contohnya saja seperti animasi hover, animasi sidebar, dan yang lainnya. Transisi ini mendukung tampilan website kami menjadi lebih baik lagi tidak hanya secara tampilan tapi juga secara pergerakan antar objek pada website kami.
@@ -91,6 +93,7 @@ Kami juga menambahkan berbagai animasi dan transisi pada website kami, contohnya
 ### Bahasa Yang Sederhana
 Menggunakan bahasa yang mudah dipahami dan menghindari jargon teknis membuat produk lebih mudah diakses oleh pengguna dari berbagai latar belakang, jadi pengguna dapat memahami produk pada website kami dengan mudah karena penggunaan Bahasa yang sederhana.
 
+
 ### Aestetika yang Menarik
-Websiten kami juga sangat memperhatikan estetika tampilan dari website kami, mulai dari pemilihan warna, font, gambar, video, dan yang lainnya. Hal ini diharapkan dapat meningkatkan kepuasan pengguna saat mengunjungi website kami melalui visual yang sudah kami rancang.
+Website kami juga sangat memperhatikan estetika tampilan dari website kami, mulai dari pemilihan warna, font, gambar, video, dan yang lainnya. Hal ini diharapkan dapat meningkatkan kepuasan pengguna saat mengunjungi website kami melalui visual yang sudah kami rancang.
 
