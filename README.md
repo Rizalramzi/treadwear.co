@@ -3,6 +3,12 @@ Treadwear adalah merek streetwear terbaik di Asia, yang memadukan desain berani 
 <br>
 <br>
 
+# Daftar Isi
+
+- <a href="https://github.com/Rizalramzi/treadwear.co?tab=readme-ov-file#penerapan-dalam-treadwearco">Run Website</a>
+- <a href="https://github.com/Rizalramzi/treadwear.co?tab=readme-ov-file#penerapan-dalam-treadwearco">Cara kerja Website</a>
+- <a href="https://github.com/Rizalramzi/treadwear.co?tab=readme-ov-file#penerapan-dalam-treadwearco">Penerapan UX pada Treadwear.co</a>
+
 # Run Website Treadwear.co
 Pastikan perangkat tersambung internet
 ## 1. Clone repositori ini dengan command :
