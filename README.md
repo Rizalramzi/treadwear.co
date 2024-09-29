@@ -78,7 +78,7 @@ Desain UI yang baik dapat meningkatkan tingkat konversi, misalnya mengubah pengu
 ### Membedakan Produk
 Dalam pasar yang kompetitif, pengalaman pengguna yang unik dapat menjadi pembeda antara produk Anda dengan produk pesaing.
 
-## Penerapan dalam Treadwear.co
+# Penerapan dalam Treadwear.co
 ### Foto dan Ilustrasi yang Profesional
 Kami menggunakan foto dan ilustrasi yang professional, hal ini selain untuk mendukung visual dan estetika namun juga meningkatkan pengalaman pengguna saat mencari atau melihat lihat produk yang tersedia pada website kami.
 <img src="https://github.com/Rizalramzi/treadwear.co/blob/arka/src/assets/readme/ux-1.png" align="middle" width="desired width" height="desired heigh">
@@ -96,4 +96,5 @@ Menggunakan bahasa yang mudah dipahami dan menghindari jargon teknis membuat pro
 
 ### Aestetika yang Menarik
 Website kami juga sangat memperhatikan estetika tampilan dari website kami, mulai dari pemilihan warna, font, gambar, video, dan yang lainnya. Hal ini diharapkan dapat meningkatkan kepuasan pengguna saat mengunjungi website kami melalui visual yang sudah kami rancang.
+<img src="https://github.com/Rizalramzi/treadwear.co/blob/arka/src/assets/readme/ux-3.png" align="middle" width="desired width" height="desired heigh">
 
