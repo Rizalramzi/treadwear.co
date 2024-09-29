@@ -5,9 +5,12 @@ Treadwear adalah merek streetwear terbaik di Asia, yang memadukan desain berani 
 
 # Daftar Isi
 
-- <a href="https://github.com/Rizalramzi/treadwear.co?tab=readme-ov-file#penerapan-dalam-treadwearco">Run Website</a>
-- <a href="https://github.com/Rizalramzi/treadwear.co?tab=readme-ov-file#penerapan-dalam-treadwearco">Cara kerja Website</a>
-- <a href="https://github.com/Rizalramzi/treadwear.co?tab=readme-ov-file#penerapan-dalam-treadwearco">Penerapan UX pada Treadwear.co</a>
+* <a href="https://github.com/Rizalramzi/treadwear.co?tab=readme-ov-file#run-website-treadwearco">Run Website</a>
+* <a href="https://github.com/Rizalramzi/treadwear.co?tab=readme-ov-file#cara-kerja-website">Cara kerja Website</a>
+  + <a href="https://github.com/Rizalramzi/treadwear.co?tab=readme-ov-file#alur-pengguna">Alur Pengguna</a>
+  + <a href="https://github.com/Rizalramzi/treadwear.co?tab=readme-ov-file#analisa-ux">Analisa UX</a>
+* <a href="https://github.com/Rizalramzi/treadwear.co?tab=readme-ov-file#penerapan-dalam-treadwearco">Penerapan UX pada Treadwear.co</a>
+* <a href="https://github.com/Rizalramzi/treadwear.co?tab=readme-ov-file#demo-website">Demo Website</a>
 
 # Run Website Treadwear.co
 Pastikan perangkat tersambung internet
@@ -103,4 +106,7 @@ Menggunakan bahasa yang mudah dipahami dan menghindari jargon teknis membuat pro
 ### Aestetika yang Menarik
 Website kami juga sangat memperhatikan estetika tampilan dari website kami, mulai dari pemilihan warna, font, gambar, video, dan yang lainnya. Hal ini diharapkan dapat meningkatkan kepuasan pengguna saat mengunjungi website kami melalui visual yang sudah kami rancang.
 <img src="https://github.com/Rizalramzi/treadwear.co/blob/arka/src/assets/readme/ux-3.png" align="middle" width="desired width" height="desired heigh">
+
+## Demo Website
+<a href="https://youtu.be/reiuqgRoM1U?si=4ejoejD8voW6cWel">`https://youtu.be/reiuqgRoM1U?si=4ejoejD8voW6cWel`</a>
 
