@@ -3186,6 +3186,10 @@ video {
     grid-column: span 1 / span 1;
   }
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
