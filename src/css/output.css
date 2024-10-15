@@ -1390,24 +1390,16 @@ video {
   width: 100%;
 }
 
+.max-w-\[15vw\] {
+  max-width: 15vw;
+}
+
 .max-w-\[3vw\] {
   max-width: 3vw;
 }
 
 .max-w-\[80vw\] {
   max-width: 80vw;
-}
-
-.max-w-\[6vw\] {
-  max-width: 6vw;
-}
-
-.max-w-\[10vw\] {
-  max-width: 10vw;
-}
-
-.max-w-\[15vw\] {
-  max-width: 15vw;
 }
 
 .flex-shrink-0 {
@@ -1613,6 +1605,10 @@ video {
 
 .gap-y-\[9\.767vw\] {
   row-gap: 9.767vw;
+}
+
+.gap-y-\[40vw\] {
+  row-gap: 40vw;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1925,6 +1921,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(9.302vw * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(9.302vw * var(--tw-space-y-reverse));
+}
+
+.space-x-\[2vw\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2vw * var(--tw-space-x-reverse));
+  margin-left: calc(2vw * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -2486,6 +2488,34 @@ video {
 
 .text-\[9\.302vw\] {
   font-size: 9.302vw;
+}
+
+.text-\[1vw\] {
+  font-size: 1vw;
+}
+
+.text-\[1\.3vw\] {
+  font-size: 1.3vw;
+}
+
+.text-\[1\.5vw\] {
+  font-size: 1.5vw;
+}
+
+.text-\[1\.9vw\] {
+  font-size: 1.9vw;
+}
+
+.text-\[2vw\] {
+  font-size: 2vw;
+}
+
+.text-\[2\.4vw\] {
+  font-size: 2.4vw;
+}
+
+.text-\[2\.2vw\] {
+  font-size: 2.2vw;
 }
 
 .font-bold {
