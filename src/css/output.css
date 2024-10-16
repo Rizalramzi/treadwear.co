@@ -1949,6 +1949,24 @@ video {
   margin-left: calc(0.4vw * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-\[0\.6vw\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.6vw * var(--tw-space-x-reverse));
+  margin-left: calc(0.6vw * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-\[1vw\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1vw * var(--tw-space-x-reverse));
+  margin-left: calc(1vw * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-\[0\.8vw\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.8vw * var(--tw-space-x-reverse));
+  margin-left: calc(0.8vw * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -3380,6 +3398,12 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(0px * var(--tw-space-x-reverse));
     margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .sm\:space-x-\[0\.4vw\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.4vw * var(--tw-space-x-reverse));
+    margin-left: calc(0.4vw * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .sm\:overflow-visible {
