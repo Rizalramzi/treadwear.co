@@ -406,3 +406,30 @@ function searching() {
         dropdown.classList.remove('flex');
     }
 }
+let quantity = 1;
+
+function increment() {
+    quantity++;
+    document.getElementById("quantity").innerText = quantity;
+}
+
+function decrement() {
+    if (quantity > 1) { // Batas minimal quantity 1
+        quantity--;
+        document.getElementById("quantity").innerText = quantity;
+    }
+}
+
+let quantity1 = 1;
+
+function increment1() {
+    quantity1++;
+    document.getElementById("quantity1").innerText = quantity1;
+}
+
+function decrement1() {
+    if (quantity1 > 1) { // Batas minimal quantity 1
+        quantity1--;
+        document.getElementById("quantity1").innerText = quantity1;
+    }
+}
