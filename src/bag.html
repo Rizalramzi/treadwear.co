@@ -11,9 +11,55 @@
     <link href="../node_modules/aos/dist/aos.css" rel="stylesheet">
     <script src="../node_modules/aos/dist/aos.js"></script>
     <script src="js/main.js"></script>
-    <title>Dashboard</title>
+    <title>Bag</title>
 </head>
 <body id="body" class="relative">
+    <div id="checkout-popup" class="fixed z-[2] w-[100vw] h-[100vh] items-center justify-center bg-black bg-opacity-65 hidden" onclick="closeCheckout(event)">
+        <div class="absolute sm:w-[45.208vw] w-[83.488vw] sm:h-[46.146vw] h-[185.814vw] bg-white sm:scale-75 scale-100">
+            <button id="close-checkout" class="absolute right-0 mr-[5.208vw] mt-[2.865vw]" onclick="closeCheckout()">
+                <img class="sm:w-[1.667vw] w-[5.581vw]" src="assets/icons/close-icon.svg" alt="">
+            </button>
+            <div class="sm:px-[5.208vw] px-[11.628vw]">
+                <div id="checkout-now" class="sm:pt-[2.865vw] pt-[9.07vw] sm:space-y-[1.823vw] space-y-[5.581vw]">
+                    <h1 class="sm:text-[2.083vw] text-[7.442vw]">Checkout Now</h1>
+                    <div class="sm:space-y-[0.833vw] space-y-[4.651vw]">
+                        <h2 class="sm:text-[1.25vw] text-[4.186vw] font-medium">Name</h2>
+                        <input class="w-full sm:h-[4.219vw] h-[13.488vw] sm:border-[0.156vw] border-[0.465vw] outline-none border-[#CCCCCC] focus:border-dark sm:text-[0.938vw] text-[2.791vw] sm:pl-[1.875vw] pl-[4.186vw]" oninput="checkInput(this)" type="text">
+                    </div>
+                    <div class="sm:space-y-[0.833vw] space-y-[4.651vw]">
+                        <h2 class="sm:text-[1.25vw] text-[4.186vw] font-medium">Home Address</h2>
+                        <input class="w-full sm:h-[4.219vw] h-[13.488vw] sm:border-[0.156vw] border-[0.465vw] outline-none border-[#CCCCCC] focus:border-dark sm:text-[0.938vw] text-[2.791vw] sm:pl-[1.875vw] pl-[4.186vw]" oninput="checkInput(this)" type="text">
+                    </div>
+                    <div class="sm:space-y-[0.833vw] space-y-[4.651vw]">
+                        <h2 class="sm:text-[1.25vw] text-[4.186vw] font-medium">Payment Method</h2>
+                        <div class="w-full grid sm:grid-cols-2 grid-cols-1 sm:gap-[1.042vw] gap-[4.651vw]">
+                            <div class="image-container sm:w-[16.875vw] w-full sm:h-[4.219vw] h-[13.488vw] border-[0.156vw] border-[#CCCCCC] flex justify-center items-center cursor-pointer" onclick="changeBorderColor(this)">
+                                <img class="sm:w-[7.813vw] w-[23.256vw]" src="./assets/images/image%204.png" alt="">
+                            </div>
+                            <div class="image-container sm:w-[16.875vw] w-full sm:h-[4.219vw] h-[13.488vw] border-[0.156vw] border-[#CCCCCC] flex justify-center items-center cursor-pointer" onclick="changeBorderColor(this)">
+                                <img class="sm:w-[5.156vw] w-[16.279vw]" src="./assets/images/image%205.png" alt="">
+                            </div>
+                            <div class="image-container sm:w-[16.875vw] w-full sm:h-[4.219vw] h-[13.488vw] border-[0.156vw] border-[#CCCCCC] flex justify-center items-center cursor-pointer" onclick="changeBorderColor(this)">
+                                <img class="sm:w-[7.813vw] w-[34.884vw]" src="./assets/images/image%206.png" alt="">
+                            </div>
+                            <div class="image-container sm:w-[16.875vw] w-full sm:h-[4.219vw] h-[13.488vw] border-[0.156vw] border-[#CCCCCC] flex justify-center items-center cursor-pointer" onclick="changeBorderColor(this)">
+                                <img class="sm:w-[5.156vw] w-[16.279vw]" src="./assets/images/image%207.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <button class="w-full sm:h-[4.219vw] h-[9.535vw] bg-black sm:text-[1.302vw] text-[3.256vw] font-medium text-white" onclick="handleCheckout()">Checkout Now</button>
+                </div>
+                <div id="checkout-ok" class="sm:pt-[11.51vw] pt-[51.163vw] hidden">
+                    <div class="flex flex-col items-center justify-center sm:space-y-[3.021vw] space-y-[7.442vw]">
+                        <img class="sm:w-[10.417vw] w-[28.372vw]" src="assets/icons/completed.png" alt="">
+                        <h2 class="sm:text-[1.667vw] text-[4.186vw] font-semibold">Payment Completed!</h2>
+                        <button class="sm:w-[18.594vw] w-[50.465vw] sm:h-[4.219vw] h-[12.093vw] bg-black sm:text-[1.302vw] text-[5.581vw] font-medium text-white" onclick="closeCheckout()">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="w-[100vw] sm:overflow-visible overflow-hidden">
     <div id="nav" class="sm:hidden block w-[100vw] h-[216.744vw] overflow-x-hidden absolute z-[2] pointer-events-none">
         <div id="sidebar" class="absolute right-0 bg-white w-[100vw] h-[216.744vw] px-[8.372vw] slide-out-left-active">
@@ -214,54 +260,6 @@
 
         </div>
     </div>
-
-    <div id="checkout-popup" class="fixed z-[2] w-[100vw] h-[100vh] items-center justify-center bg-black bg-opacity-65 hidden" onclick="closeCheckout(event)">
-        <div class="absolute w-[45.208vw] h-[46.146vw] bg-white sm:scale-75 scale-[195%]">
-            <button id="close-checkout" class="absolute right-0 mr-[5.208vw] mt-[2.865vw]" onclick="closeCheckout()">
-                <img class="w-[1.667vw]" src="assets/icons/close-icon.svg" alt="">
-            </button>
-            <div class="px-[5.208vw]">
-                <div id="checkout-now" class="pt-[2.865vw] space-y-[1.823vw]">
-                    <h1 class="text-[2.083vw]">Checkout Now</h1>
-                    <div class="">
-                        <h2 class="text-[1.25vw] font-medium">Name</h2>
-                        <input class="w-full h-[4.219vw] border-[0.156vw] outline-none border-[#CCCCCC] focus:border-dark text-[0.938vw] pl-[1.875vw]" oninput="checkInput(this)" type="text">
-                    </div>
-                    <div class="sm:space-y-[0.833vw] space-y-[0.23vw]">
-                        <h2 class="text-[1.25vw] font-medium">Home Address</h2>
-                        <input class="w-full h-[4.219vw] border-[0.156vw] outline-none border-[#CCCCCC] focus:border-dark text-[0.938vw] pl-[1.875vw]" oninput="checkInput(this)" type="text">
-                    </div>
-                    <div class="sm:space-y-[0.833vw] space-y-[0.23vw]">
-                        <h2 class="text-[1.25vw] font-medium">Choose Image</h2>
-                        <div class="grid grid-cols-2 gap-[1.042vw]">
-                            <div class="image-container w-[16.875vw] h-[4.219vw] border-[0.156vw] border-[#CCCCCC] flex justify-center items-center cursor-pointer" onclick="changeBorderColor(this)">
-                                <img class="w-[7.813vw]" src="./assets/images/image%204.png" alt="">
-                            </div>
-                            <div class="image-container w-[16.875vw] h-[4.219vw] border-[0.156vw] border-[#CCCCCC] flex justify-center items-center cursor-pointer" onclick="changeBorderColor(this)">
-                                <img class="w-[5.156vw]" src="./assets/images/image%205.png" alt="">
-                            </div>
-                            <div class="image-container w-[16.875vw] h-[4.219vw] border-[0.156vw] border-[#CCCCCC] flex justify-center items-center cursor-pointer" onclick="changeBorderColor(this)">
-                                <img class="w-[7.813vw]" src="./assets/images/image%206.png" alt="">
-                            </div>
-                            <div class="image-container w-[16.875vw] h-[4.219vw] border-[0.156vw] border-[#CCCCCC] flex justify-center items-center cursor-pointer" onclick="changeBorderColor(this)">
-                                <img class="w-[5.156vw]" src="./assets/images/image%207.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-    
-                    <button class="w-full h-[4.219vw] bg-black text-[1.302vw] font-medium text-white" onclick="handleCheckout()">Checkout Now</button>
-                </div>
-                <div id="checkout-ok" class="pt-[11.51vw] hidden">
-                    <div class="flex flex-col items-center justify-center space-y-[3.021vw]">
-                        <img class="w-[10.417vw]" src="assets/icons/completed.png" alt="">
-                        <h2 class="text-[1.667vw] font-semibold">Payment Completed!</h2>
-                        <button class="w-[18.594vw] h-[4.219vw] bg-black text-[1.302vw] font-medium text-white" onclick="closeCheckout()">Ok</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class=" relative pb-[1vw] mt-[5.625vw]">
         <h1 class="text-center sm:text-[3.333vw] text-[5.581vw] leading-none text-white">BAG</h1>
         <div class="text-white flex justify-between sm:px-[4.271vw] px-[8.372vw] sm:mt-[2.5vw] mt-[9.302vw]">
@@ -423,31 +421,31 @@
             <div class="sm:mt-0 mt-[6.512vw]">
                 <ul data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" class="space-y-[0.521vw]">
                     <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] font-semibold">Treadwear</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Location</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">About Us</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Contact Us</li>
+                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light"><a href="location.html">Location</a></li>
+                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light"><a href="about.html">About Us</a></li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">Contact Us</li>
                 </ul>
             </div>
             <div class="sm:mt-0 mt-[6.512vw]">
                 <ul data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" class="space-y-[0.521vw]">
                     <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] font-semibold">Help</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">FAQ</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Payment</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Privacy and Policy</li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">FAQ</li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">Payment</li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">Privacy and Policy</li>
                 </ul>
             </div>
             <div class="sm:mt-0 mt-[3.721vw]">
                 <ul data-aos="fade-up" data-aos-duration="500" data-aos-delay="600" class="space-y-[0.521vw]">
                     <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] font-semibold">Customer</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Voucher</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Order Track</li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">Voucher</li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">Order Track</li>
                 </ul>
             </div>
             <div class="sm:mt-0 mt-[3.721vw]">
                 <ul data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" class="space-y-[0.521vw]">
                     <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] font-semibold">Products</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Sale</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">New Collections</li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">Sale</li>
+                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer"><a href="collection.html">New Collections</a></li>
                 </ul>
             </div>
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="800" class="sm:space-y-[0.833vw] space-y-[4.186vw] sm:w-auto w-full sm:col-span-1 col-span-2 flex flex-col sm:items-start items-center sm:mt-0 mt-[6.977vw]">
@@ -479,6 +477,29 @@
         </div>
     </footer>
     </div>
+    <div id="popup" class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden" onclick="togglePopup(false)">
+        <div class="bg-black flex flex-col items-center p-6 rounded-lg shadow-lg sm:w-[20.833vw] w-[69.767vw]" onclick="event.stopPropagation()">
+            <img src="assets/icons/gear-512.png" alt="" class="sm:w-[5.208vw] w-[23.256vw] animate-[spin_5s_linear_infinite]">
+            <h2 class="text-white text-[4.651vw] text-center sm:text-[1.042vw] font-bold mb-4">This features is under developement now</h2>
+            <p class="text-white sm:text-[0.729vw] text-[3.256vw] mb-4">Sorry for the inconvinient</p>
+            <button onclick="togglePopup(false)" class="sm:px-[0.833vw] px-[3.721vw] sm:py-[0.208vw] py-[0.93vw] bg-red-500 text-white sm:text-[0.729vw] text-[3.256vw] rounded-md">Close</button>
+        </div>
+    </div>
+    <script>
+        function togglePopup(show){
+            const popup = document.getElementById('popup');
+            const body = document.body;
+            if (show) {
+                popup.classList.remove('hidden');
+                popup.classList.add('flex');
+                body.style.overflow = 'hidden';  // Disable scrolling
+            } else {
+                popup.classList.add('hidden');
+                popup.classList.remove('flex');
+                body.style.overflow = '';  // Enable scrolling
+            }
+        }
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
           const sidebar = document.getElementById('sidebar');
@@ -576,6 +597,22 @@
         });
     </script>
     <script>
+        function handleCheckout() {
+            const checkoutNow = document.getElementById('checkout-now');
+            const checkoutOk = document.getElementById('checkout-ok');
+
+            // Change button text to 'Loading...'
+            const checkoutButton = event.currentTarget;
+            checkoutButton.innerText = 'Loading...';
+
+            // Hide the checkout form and show the loading state
+            setTimeout(() => {
+                checkoutNow.classList.add('hidden');
+                checkoutOk.classList.remove('hidden');
+                // Reset the button text back to 'Checkout Now'
+                checkoutButton.innerText = 'Checkout Now';
+            }, 3000); // Wait for 3 seconds
+        }
         // Function to open the checkout pop-up
         function openCheckout() {
            document.getElementById('checkout-popup').classList.remove('hidden');
