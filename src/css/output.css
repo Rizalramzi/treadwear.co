@@ -678,6 +678,10 @@ video {
   top: 16.427vw;
 }
 
+.top-\[18vw\] {
+  top: 18vw;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -1631,12 +1635,6 @@ video {
   margin-left: calc(0.417vw * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-\[0\.698vw\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.698vw * var(--tw-space-x-reverse));
-  margin-left: calc(0.698vw * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-\[0\.729vw\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.729vw * var(--tw-space-x-reverse));
@@ -1647,6 +1645,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.885vw * var(--tw-space-x-reverse));
   margin-left: calc(0.885vw * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-\[0\.8vw\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.8vw * var(--tw-space-x-reverse));
+  margin-left: calc(0.8vw * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-\[1\.042vw\] > :not([hidden]) ~ :not([hidden]) {
@@ -1923,48 +1927,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(9.302vw * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(9.302vw * var(--tw-space-y-reverse));
-}
-
-.space-x-0 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0px * var(--tw-space-x-reverse));
-  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-\[0\.1vw\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.1vw * var(--tw-space-x-reverse));
-  margin-left: calc(0.1vw * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-\[0\.2vw\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.2vw * var(--tw-space-x-reverse));
-  margin-left: calc(0.2vw * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-\[0\.4vw\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.4vw * var(--tw-space-x-reverse));
-  margin-left: calc(0.4vw * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-\[0\.6vw\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.6vw * var(--tw-space-x-reverse));
-  margin-left: calc(0.6vw * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-\[1vw\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1vw * var(--tw-space-x-reverse));
-  margin-left: calc(1vw * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-\[0\.8vw\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.8vw * var(--tw-space-x-reverse));
-  margin-left: calc(0.8vw * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -2582,10 +2544,6 @@ video {
 
 .leading-none {
   line-height: 1;
-}
-
-.leading-normal {
-  line-height: 1.5;
 }
 
 .tracking-\[0\.417vw\] {
@@ -3246,8 +3204,8 @@ video {
          column-gap: 1vw;
   }
 
-  .sm\:gap-y-0 {
-    row-gap: 0px;
+  .sm\:gap-y-\[0\.4vw\] {
+    row-gap: 0.4vw;
   }
 
   .sm\:gap-y-\[2\.344vw\] {
@@ -3262,22 +3220,16 @@ video {
     row-gap: 4vw;
   }
 
-  .sm\:gap-y-\[1vw\] {
-    row-gap: 1vw;
-  }
-
-  .sm\:gap-y-\[0\.5vw\] {
-    row-gap: 0.5vw;
-  }
-
-  .sm\:gap-y-\[0\.4vw\] {
-    row-gap: 0.4vw;
-  }
-
   .sm\:space-x-\[0\.313vw\] > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.313vw * var(--tw-space-x-reverse));
     margin-left: calc(0.313vw * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .sm\:space-x-\[0\.4vw\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.4vw * var(--tw-space-x-reverse));
+    margin-left: calc(0.4vw * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .sm\:space-x-\[0\.677vw\] > :not([hidden]) ~ :not([hidden]) {
@@ -3392,18 +3344,6 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(3vw * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(3vw * var(--tw-space-y-reverse));
-  }
-
-  .sm\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0px * var(--tw-space-x-reverse));
-    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .sm\:space-x-\[0\.4vw\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0.4vw * var(--tw-space-x-reverse));
-    margin-left: calc(0.4vw * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .sm\:overflow-visible {
