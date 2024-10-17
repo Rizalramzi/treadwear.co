@@ -24,15 +24,15 @@
                     <input type="text" placeholder="Search" class="ml-[1.395vw] w-full pl-[0.521vw] pr-[3.721vw] text-black text-[4.186vw] placeholder-black focus:outline-none bg-transparent" />
                 </div>
                 <div>
-                    <a href="">
+                    <a href="bag.html">
                         <img src="assets/icons/bag-icon-black.svg" alt="" class="w-[8.372vw]">
                     </a>
                 </div>
             </div>`
             <ul class="flex flex-col gap-[7.442vw] text-black font-semibold text-[4.186vw] mt-[4.884vw]">
-                <li><a href="#aboutus">About us</a></li>
+                <li><a href="about.html">About us</a></li>
                 <li><a href="#product">Product</a></li>
-                <li><a href="#promo">Promo</a></li>
+                <li onclick="togglePopup(true)" class="cursor-pointer">Promo</li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </div>
@@ -45,9 +45,9 @@
                 </div>
                 <div class="hidden sm:inline">
                     <ul class="flex gap-x-[1.563vw] text-white text-[0.938vw]">
-                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="50"><a href="">About us</a></li>
-                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="100"><a href="">Product</a></li>
-                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="150"><a href="">Promo</a></li>
+                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="50"><a href="about.html">About us</a></li>
+                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="100"><a href="dashboard.html">Product</a></li>
+                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="150" onclick="togglePopup(true)" class="cursor-pointer">Promo</li>
                         <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="200"><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
@@ -60,7 +60,7 @@
                     <input type="text" placeholder="Search" class="w-full pl-[0.521vw] pr-[1.302vw] text-white text-[0.938vw] placeholder-white focus:outline-none bg-transparent" />
                 </div>
                 <div data-aos="fade-left"  data-aos-duration="500">
-                    <a href="">
+                    <a href="bag.html">
                         <img src="assets/icons/bag-icon.svg" alt="" class="w-[1.823vw]">
                     </a>
                 </div>
@@ -73,7 +73,7 @@
                     <h1 data-aos="fade-right"  data-aos-duration="500" data-aos-delay="250" class="sm:text-[5.208vw] sm:leading-[4.427vw] sm:w-[43.385vw] tracking-wider text-white text-[9.302vw] w-[77.209vw] leading-[8.372vw]">Number 1 Streetwear brand in Asia</h1>
                     <p data-aos="fade-right"  data-aos-duration="500" data-aos-delay="300" class="text-white sm:text-[0.938vw] sm:w-[30.26vw] w-[77.209vw] text-[2.791vw] text-justify">Treadwear is the ultimate streetwear brand in Asia, blending bold designs with urban culture. Stay ahead of the trend with their iconic, cutting-edge fashion made for the streets.</p>
                     <div data-aos="fade-right"  data-aos-duration="500" data-aos-delay="350" class="relative">
-                        <button class="absolute top-0 sm:w-[11.615vw] w-[41.86vw] sm:h-[2.604vw] h-[9.767vw] text-dark bg-white sm:text-[1.042vw] text-[3.256vw] font-medium hover:mt-[-0.417vw] hover:ml-[-0.417vw] sm:mt-0 mt-[-1.56vw] sm:ml-0 ml-[-1.56vw] transition-all duration-300 ease-in-out">Learn More <span class="arrow">--></span></button>
+                        <button class="absolute top-0 sm:w-[11.615vw] w-[41.86vw] sm:h-[2.604vw] h-[9.767vw] text-dark bg-white sm:text-[1.042vw] text-[3.256vw] font-medium hover:mt-[-0.417vw] hover:ml-[-0.417vw] sm:mt-0 mt-[-1.56vw] sm:ml-0 ml-[-1.56vw] transition-all duration-300 ease-in-out"><a href="about.html">Learn More <span class="arrow">--></span></a></button>
                         <div class="sm:w-[11.542vw] w-[41.86vw] sm:h-[2.604vw] h-[9.767vw] border-[0.104vw] border-white"></div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                     <a href="index.html"><h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" class="sm:text-[3.333vw] text-[5.581vw] leading-none">Treadwear.co</h1></a>
                     <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" class="sm:text-[0.938vw] text-[2.791vw] sm:w-[41.563vw] w-[83.256vw]">Treadwear is an Indonesian fashion brand that provides high quality and trendy casual clothing with a modern fashion style. Focusing on young people with an urban lifestyle, Treadwear always follows current fashion trends and is committed to always being the number 1 streetwear brand in Asia</p>
                     <div data-aos="fade-right"  data-aos-duration="500" data-aos-delay="350" class="relative">
-                        <button class="absolute top-0 left-0 sm:w-[11.615vw] w-[41.86vw] sm:h-[2.604vw] h-[9.767vw] text-dark bg-white sm:text-[1.042vw] text-[3.256vw] font-medium hover:mt-[-0.417vw] hover:ml-[-0.417vw] sm:mt-0 mt-[-1.56vw] sm:ml-0 ml-[-1.56vw] transition-all duration-300 ease-in-out">Learn More <span class="arrow">--></span></button>
+                        <button class="absolute top-0 left-0 sm:w-[11.615vw] w-[41.86vw] sm:h-[2.604vw] h-[9.767vw] text-dark bg-white sm:text-[1.042vw] text-[3.256vw] font-medium hover:mt-[-0.417vw] hover:ml-[-0.417vw] sm:mt-0 mt-[-1.56vw] sm:ml-0 ml-[-1.56vw] transition-all duration-300 ease-in-out"><a href="about.html">Learn More <span class="arrow">--></span><a></button>
                         <div class="sm:w-[11.542vw] w-[41.86vw] sm:h-[2.604vw] h-[9.767vw] border-[0.104vw] border-white"></div>
                     </div>
                 </div>
@@ -451,31 +451,31 @@
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" class="sm:mt-0 mt-[6.512vw]">
                 <ul class="space-y-[0.521vw]">
                     <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] font-semibold">Treadwear</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Location</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">About Us</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Contact Us</li>
+                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light"><a href="location.html">Location</a></li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">About Us</li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">Contact Us</li>
                 </ul>
             </div>
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" class="sm:mt-0 mt-[6.512vw]">
                 <ul class="space-y-[0.521vw]">
                     <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] font-semibold">Help</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">FAQ</li>
-                    <li data-aos-delay="700" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Payment</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Privacy and Policy</li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">FAQ</li>
+                    <li onclick="togglePopup(true)" data-aos-delay="700" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">Payment</li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">Privacy and Policy</li>
                 </ul>
             </div>
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="600" class="sm:mt-0 mt-[3.721vw]">
                 <ul class="space-y-[0.521vw]">
                     <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] font-semibold">Customer</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Voucher</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Order Track</li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">Voucher</li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">Order Track</li>
                 </ul>
             </div>
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" class="sm:mt-0 mt-[3.721vw]">
                 <ul class="space-y-[0.521vw]">
                     <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] font-semibold">Products</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">Sale</li>
-                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light">New Collections</li>
+                    <li onclick="togglePopup(true)" class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer">Sale</li>
+                    <li class="sm:text-[1.042vw] text-[3.686vw] sm:leading-[2.188vw] leading-[9.628vw] sm:font-normal font-light cursor-pointer"><a href="collection.html">New Collections</a></li>
                 </ul>
             </div>
             <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="800" class="sm:space-y-[0.833vw] space-y-[4.186vw] sm:w-auto w-full sm:col-span-1 col-span-2 flex flex-col sm:items-start items-center sm:mt-0 mt-[6.977vw]">
@@ -507,6 +507,29 @@
         </div>
     </footer>
     </div>
+    <div id="popup" class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden" onclick="togglePopup(false)">
+        <div class="bg-black flex flex-col items-center p-6 rounded-lg shadow-lg sm:w-[20.833vw] w-[69.767vw]" onclick="event.stopPropagation()">
+            <img src="assets/icons/gear-512.png" alt="" class="sm:w-[5.208vw] w-[23.256vw] animate-[spin_5s_linear_infinite]">
+            <h2 class="text-white text-[4.651vw] text-center sm:text-[1.042vw] font-bold mb-4">This features is under developement now</h2>
+            <p class="text-white sm:text-[0.729vw] text-[3.256vw] mb-4">Sorry for the inconvinient</p>
+            <button onclick="togglePopup(false)" class="sm:px-[0.833vw] px-[3.721vw] sm:py-[0.208vw] py-[0.93vw] bg-red-500 text-white sm:text-[0.729vw] text-[3.256vw] rounded-md">Close</button>
+        </div>
+    </div>
+    <script>
+        function togglePopup(show){
+            const popup = document.getElementById('popup');
+            const body = document.body;
+            if (show) {
+                popup.classList.remove('hidden');
+                popup.classList.add('flex');
+                body.style.overflow = 'hidden';  // Disable scrolling
+            } else {
+                popup.classList.add('hidden');
+                popup.classList.remove('flex');
+                body.style.overflow = '';  // Enable scrolling
+            }
+        }
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById("myVideo").load();
